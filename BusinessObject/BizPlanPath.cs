@@ -14,10 +14,10 @@ namespace BusinessObject
         /// 查询地铁换横路线的统一接口
         /// </summary>
         /// <param name="originId">始发站</param>
-        /// <param name="destID">目标站</param>
+        /// <param name="destId">目标站</param>
         /// <param name="strOption">1：用时最少路线查询；2：换乘最少路线查询</param>
         /// <returns>最优的换乘路线</returns>
-        public RoutePlanResult GetPlanPath(string originId, string destID, string strOption,params string[] flag)
+        public RoutePlanResult GetPlanPath(string originId, string destId, string strOption,params string[] flag)
         {
             ShortestTimePath p = new ShortestTimePath(flag);
             TransferLestPath t = new TransferLestPath(flag);
@@ -25,10 +25,10 @@ namespace BusinessObject
             //换乘最少路线查询
             if (strOption == "2")
             {
-                ret = t.GetTransferLeastPath(originId, destID);
+                ret = t.GetTransferLeastPath(originId, destId);
             }
             else
-                ret = p.GetShortestTimePath(originId, destID);
+                ret = p.GetShortestTimePath(originId, destId);
             return ret;
         }
         /// <summary>
@@ -56,13 +56,13 @@ namespace BusinessObject
         /// <summary>
         /// 检查请求的路线查询是否合法
         /// </summary>
-        /// <param name="originID"></param>
-        /// <param name="destID"></param>
+        /// <param name="originId"></param>
+        /// <param name="destId"></param>
         /// <param name="ret"></param>
         /// <returns></returns>
-        public bool ValideData(string originID, string destID, ref string ret,params string[] flag)
+        public bool ValideData(string originId, string destId, ref string ret,params string[] flag)
         {
-            if (destID == originID)
+            if (destId == originId)
             {
                 ret = "始发站和目的站不能相同！";
                 return false;
@@ -78,8 +78,8 @@ namespace BusinessObject
                     Edge e = station.EdgeList[j] as Edge;
                     if (e.IsStep)
                     {
-                        if ((e.SatrtNodeID == originID && e.EndNodeID == destID)
-                            || (e.SatrtNodeID == destID && e.EndNodeID == originID))
+                        if ((e.SatrtNodeID == originId && e.EndNodeID == destId)
+                            || (e.SatrtNodeID == destId && e.EndNodeID == originId))
                         {
                             ret = "您想要查询的车站时换乘路线！您不需要乘车！";
                             return false;

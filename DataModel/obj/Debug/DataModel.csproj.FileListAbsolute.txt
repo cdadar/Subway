@@ -1,9 +1,0 @@
-E:\learn\12_No.2\Subway\DataModel\bin\Debug\DataModel.dll
-E:\learn\12_No.2\Subway\DataModel\bin\Debug\DataModel.pdb
-E:\learn\12_No.2\Subway\DataModel\obj\Debug\ResolveAssemblyReference.cache
-E:\learn\12_No.2\Subway\DataModel\obj\Debug\DataModel.dll
-E:\learn\12_No.2\Subway\DataModel\obj\Debug\DataModel.pdb
-D:\MyWorld\项目实训\Subway\DataModel\bin\Debug\DataModel.dll
-D:\MyWorld\项目实训\Subway\DataModel\bin\Debug\DataModel.pdb
-D:\MyWorld\项目实训\Subway\DataModel\obj\Debug\DataModel.dll
-D:\MyWorld\项目实训\Subway\DataModel\obj\Debug\DataModel.pdb
