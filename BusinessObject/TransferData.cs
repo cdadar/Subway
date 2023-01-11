@@ -8,9 +8,9 @@ namespace BusinessObject
     public class TransferData
     {
         //换乘边的换乘出发站ID
-        public string TransferOriginID = "";
+        public string TransferOriginId = "";
         //换乘边的换乘目的站ID
-        public string TransferDestID = "";
+        public string TransferDestId = "";
         //始发到目的的权重
         public double TransferEdgeWeight = 0;
         //经过这两个站点的所有路线

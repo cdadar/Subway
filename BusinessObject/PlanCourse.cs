@@ -13,19 +13,19 @@ namespace BusinessObject
     {
         private Hashtable htPassedPath;
 
-        public PlanCourse(ArrayList nodeList,string originID)
+        public PlanCourse(ArrayList nodeList,string originId)
         {
             this.htPassedPath = new Hashtable();
 
             Node originNode = null;
             foreach (Node node in nodeList)
             {
-                if (node.ID == originID)
+                if (node.Id == originId)
                     originNode = node;
                 else
                 {
-                    PassedPath pPath = new PassedPath(node.ID);
-                    this.htPassedPath.Add(node.ID, pPath);
+                    PassedPath pPath = new PassedPath(node.Id);
+                    this.htPassedPath.Add(node.Id, pPath);
                 }
             }
 
@@ -40,17 +40,17 @@ namespace BusinessObject
                 return;
             foreach (Edge edge in originNode.EdgeList)
             {
-                PassedPath pPath=this[edge.EndNodeID];
+                PassedPath pPath=this[edge.EndNodeId];
                 if (pPath == null)
                     continue;
-                pPath.PassedIDList.Add(originNode.ID);
+                pPath.PassedIdList.Add(originNode.Id);
                 pPath.Weight = edge.Weight;
             }
         }
 
-        public PassedPath this[string nodeID]
+        public PassedPath this[string nodeId]
         {
-            get { return (PassedPath)this.htPassedPath[nodeID]; }
+            get { return (PassedPath)this.htPassedPath[nodeId]; }
         }
         
     }

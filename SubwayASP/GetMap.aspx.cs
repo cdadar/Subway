@@ -45,10 +45,10 @@ namespace SubwayASP
                 System.Drawing.Color color = System.Drawing.Color.Red;
                 string sid = Request.QueryString["curSessionId"].ToString();
                 RoutePlanResult ret = (RoutePlanResult)Session[sid];
-                if (ret != null && ret.passedNodeIDs.Length > 0)
+                if (ret != null && ret.passedNodeIds.Length > 0)
                 {
                     Graphics g = Graphics.FromImage(bitmap);
-                    string[] path = ret.passedNodeIDs;
+                    string[] path = ret.passedNodeIds;
                     for (int i = 0; i < path.Length; i++)
                     {
                         Node station = bizPlanPath.GetNode(path[i]);

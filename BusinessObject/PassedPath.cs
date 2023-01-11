@@ -16,25 +16,25 @@ namespace BusinessObject
         public bool BeProcessed;
 
         // 当前正在处理的节点（迪克斯特拉(Dikastra)算法）
-        public string CurNodeID;
+        public string CurNodeId;
 
         //累积的权值
         public double Weight;
 
         //路径
-        public ArrayList PassedIDList;
+        public ArrayList PassedIdList;
 
-        public PassedPath(string ID)
+        public PassedPath(string Id)
         {
-            this.CurNodeID = ID;
+            this.CurNodeId = Id;
             this.Weight = double.MaxValue;
-            this.PassedIDList = new ArrayList();
+            this.PassedIdList = new ArrayList();
             this.BeProcessed = false;
         }
 
         public PassedPath()
         {
-            this.PassedIDList = new ArrayList();
+            this.PassedIdList = new ArrayList();
         }
     }
 }

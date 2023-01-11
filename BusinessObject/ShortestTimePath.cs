@@ -30,63 +30,63 @@ namespace BusinessObject
             this.nodeList = DalStations.galPathStations;
         }
 
-        public RoutePlanResult GetShortestTimePath(string originID, string destID)
+        public RoutePlanResult GetShortestTimePath(string originId, string destId)
         {
-            PlanCourse planCourse = new PlanCourse(nodeList, originID);
-            Node curNode = GetMinWeightRudeNode(planCourse, originID);
+            PlanCourse planCourse = new PlanCourse(nodeList, originId);
+            Node curNode = GetMinWeightRudeNode(planCourse, originId);
             #region 计算过程
             while (curNode != null)
             {
-                PassedPath curPath = planCourse[curNode.ID];
+                PassedPath curPath = planCourse[curNode.Id];
                 foreach (Edge edge in curNode.EdgeList)
                 {
                     //已选取的顶点则不必考虑
-                    if (curPath.PassedIDList.Contains(edge.EndNodeID)) continue;
+                    if (curPath.PassedIdList.Contains(edge.EndNodeId)) continue;
 
-                    PassedPath targetPath = planCourse[edge.EndNodeID];
+                    PassedPath targetPath = planCourse[edge.EndNodeId];
                     double tempWeight = curPath.Weight + edge.Weight;
                     if (tempWeight < targetPath.Weight)
                     {
                         targetPath.Weight = tempWeight;
-                        targetPath.PassedIDList.Clear();
-                        for (int i = 0; i < curPath.PassedIDList.Count; i++)
+                        targetPath.PassedIdList.Clear();
+                        for (int i = 0; i < curPath.PassedIdList.Count; i++)
                         {
-                            targetPath.PassedIDList.Add(curPath.PassedIDList[i].ToString());
+                            targetPath.PassedIdList.Add(curPath.PassedIdList[i].ToString());
                         }
-                        targetPath.PassedIDList.Add(curNode.ID);
+                        targetPath.PassedIdList.Add(curNode.Id);
                     }
                 }
                 //标志为已处理
-                planCourse[curNode.ID].BeProcessed = true;
+                planCourse[curNode.Id].BeProcessed = true;
                 //获取下一个未处理节点
-                curNode = GetMinWeightRudeNode(planCourse, originID);
+                curNode = GetMinWeightRudeNode(planCourse, originId);
             }
             #endregion
             //表示规划结束
-            return this.GetResult(planCourse, destID);
+            return this.GetResult(planCourse, destId);
         }
 
         /// <summary>
         /// 从PlanCourse表中取出目标及诶单的PassedPath，这个PassedPath即是规划结果
         /// </summary>
         /// <param name="planCourse">迪克斯特拉(Dikastra)算法中，一个顶点到所有其他顶点的最短路径</param>
-        /// <param name="destID">目标车站ID</param>
+        /// <param name="destId">目标车站ID</param>
         /// <returns>到达目的站点的路线</returns>
-        private RoutePlanResult GetResult(PlanCourse planCourse, string destID)
+        private RoutePlanResult GetResult(PlanCourse planCourse, string destId)
         {
-            PassedPath pPath = planCourse[destID];
+            PassedPath pPath = planCourse[destId];
 
             if (pPath.Weight == int.MaxValue)
             {
                 RoutePlanResult result1 = new RoutePlanResult(null, int.MaxValue);
                 return result1;
             }
-            string[] passedNodeIDs = new string[pPath.PassedIDList.Count + 1];
+            string[] passedNodeIDs = new string[pPath.PassedIdList.Count + 1];
             for (int i = 0; i < passedNodeIDs.Length - 1; i++)
             {
-                passedNodeIDs[i] = pPath.PassedIDList[i].ToString();
+                passedNodeIDs[i] = pPath.PassedIdList[i].ToString();
             }
-            passedNodeIDs[passedNodeIDs.Length - 1] = pPath.CurNodeID;
+            passedNodeIDs[passedNodeIDs.Length - 1] = pPath.CurNodeId;
 
             RoutePlanResult result = new RoutePlanResult(passedNodeIDs, pPath.Weight);
 
@@ -97,18 +97,18 @@ namespace BusinessObject
         /// 从PlanCourse取出一个当前累计权值最小，并且没有被处理过的节点
         /// </summary>
         /// <param name="planCourse">迪克斯特拉(Dikastra)算法中，一个顶点到所有其他顶点的最短路径</param>
-        /// <param name="originID">北京地铁所有路线的车站</param>
+        /// <param name="originId">北京地铁所有路线的车站</param>
         /// <returns>从当前站点可达通路的权重最小的边的节点</returns>
-        private Node GetMinWeightRudeNode(PlanCourse planCourse, string originID)
+        private Node GetMinWeightRudeNode(PlanCourse planCourse, string originId)
         {
             double weight = double.MaxValue;
             Node destNode = null;
 
             foreach (Node node in nodeList)
             {
-                if (node.ID == originID)
+                if (node.Id == originId)
                     continue;
-                PassedPath pPath = planCourse[node.ID];
+                PassedPath pPath = planCourse[node.Id];
                 if (pPath.BeProcessed)
                     continue;
                 if (pPath.Weight < weight)

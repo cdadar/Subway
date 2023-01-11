@@ -91,8 +91,8 @@ namespace DataAccessLayer
                         {
                             Edge aEdge1 = new Edge();
 
-                            aEdge1.SatrtNodeID = id;
-                            aEdge1.EndNodeID = PrivSta;
+                            aEdge1.SatrtNodeId = id;
+                            aEdge1.EndNodeId = PrivSta;
                             aEdge1.Weight = double.Parse(ToPrivTime);
                             aEdge1.EdgeDirection = DataDirection.priv;
                             node.EdgeList.Add(aEdge1);
@@ -101,8 +101,8 @@ namespace DataAccessLayer
                         if (NextSta != "9999")
                         {
                             Edge aEdge1 = new Edge();
-                            aEdge1.SatrtNodeID = id;
-                            aEdge1.EndNodeID = NextSta;
+                            aEdge1.SatrtNodeId = id;
+                            aEdge1.EndNodeId = NextSta;
                             aEdge1.Weight = double.Parse(ToNextTime);
                             aEdge1.EdgeDirection = DataDirection.next;
                             node.EdgeList.Add(aEdge1);
@@ -118,8 +118,8 @@ namespace DataAccessLayer
                                 string NeedTime = exStation.Attribute("NeedTime").Value;
 
                                 Edge aEdge1 = new Edge();
-                                aEdge1.SatrtNodeID = id;
-                                aEdge1.EndNodeID = ToPath[1];
+                                aEdge1.SatrtNodeId = id;
+                                aEdge1.EndNodeId = ToPath[1];
                                 aEdge1.EdgeDirection = DataDirection.trabsfer;
                                 aEdge1.Weight = double.Parse(NeedTime);
                                 aEdge1.IsStep = true;
@@ -140,7 +140,7 @@ namespace DataAccessLayer
             {
                 Node node = (Node)galPathStations[i];
 
-                if (node.ID == nodeId)
+                if (node.Id == nodeId)
                     return node;
             }
 

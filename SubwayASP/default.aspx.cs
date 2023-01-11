@@ -31,8 +31,8 @@ namespace SubwayASP
             for (int i = 0; i < arStations.Count; i++)
             {
                 Node sta = (Node)arStations[i];
-                this.ddlBegin.Items.Add(new ListItem(sta.PathName + ":" + sta.StaName, sta.ID));
-                this.ddlEnd.Items.Add(new ListItem(sta.PathName + ":" + sta.StaName, sta.ID));
+                this.ddlBegin.Items.Add(new ListItem(sta.PathName + ":" + sta.StaName, sta.Id));
+                this.ddlEnd.Items.Add(new ListItem(sta.PathName + ":" + sta.StaName, sta.Id));
             }
 
             this.ddlBegin.SelectedIndex = 0;
@@ -77,7 +77,7 @@ namespace SubwayASP
             #endregion
 
             this.hdUseTime.Value = ret.weight.ToString();
-            this.hdMapData.Value = this.GetMapData(ret.passedNodeIDs, ret.passedNodeIDs[0]);
+            this.hdMapData.Value = this.GetMapData(ret.passedNodeIds, ret.passedNodeIds[0]);
         }
 
         protected void ddlSize_SelectedIndexChanged(object sender, EventArgs e)
@@ -138,7 +138,7 @@ namespace SubwayASP
 
             //去掉重复的站点，因为在换乘路线查询算法中，如果有换乘发生，则会产生一些重复的换乘站的
             //为了本算法的统一性，先去掉这些重复站点
-            IEnumerable passNodes = this.ret.passedNodeIDs.Distinct();
+            IEnumerable passNodes = this.ret.passedNodeIds.Distinct();
             Queue paths = new Queue();
             foreach (string v in passNodes)
             {
@@ -192,7 +192,7 @@ namespace SubwayASP
             rowDef.Cells.Add(cel);
 
             //5 column
-            cel = this.GetOperateColumn(ret.passedNodeIDs, priv.ID);
+            cel = this.GetOperateColumn(ret.passedNodeIds, priv.Id);
             cel.HorizontalAlign = HorizontalAlign.Center;
             rowDef.Cells.Add(cel);
             #endregion
@@ -209,7 +209,7 @@ namespace SubwayASP
                     paths.Dequeue();
                     passStationCount++;
                 }
-                if (paths.Count > 0 && tmpPriv.PathID != next.PathID)
+                if (paths.Count > 0 && tmpPriv.PathId != next.PathId)
                 {
                     row++;
                     #region 正常路线
@@ -237,7 +237,7 @@ namespace SubwayASP
                     //2 column
                     cel = new TableCell();
                     cel.HorizontalAlign = HorizontalAlign.Center;
-                    img = this.GetImage("A" + tmpPriv.PathID + ".png", 6, 25);
+                    img = this.GetImage("A" + tmpPriv.PathId + ".png", 6, 25);
                     cel.Controls.Add(img);
                     rowDef.Cells.Add(cel);
 
@@ -295,7 +295,7 @@ namespace SubwayASP
                     rowDef.Cells.Add(new TableCell());
 
                     //5 column
-                    cel = this.GetOperateColumn(ret.passedNodeIDs, next.ID);
+                    cel = this.GetOperateColumn(ret.passedNodeIds, next.Id);
                     cel.HorizontalAlign = HorizontalAlign.Center;
                     rowDef.Cells.Add(cel);
                     #endregion
@@ -330,7 +330,7 @@ namespace SubwayASP
                     //2 column
                     cel = new TableCell();
                     cel.HorizontalAlign = HorizontalAlign.Center;
-                    img = this.GetImage("A" + tmpPriv.PathID + ".png", 6, 25);
+                    img = this.GetImage("A" + tmpPriv.PathId + ".png", 6, 25);
                     cel.Controls.Add(img);
                     rowDef.Cells.Add(cel);
 
@@ -383,7 +383,7 @@ namespace SubwayASP
             rowDef.Cells.Add(new TableCell());
 
             //5 column
-            cel = this.GetOperateColumn(ret.passedNodeIDs, priv.ID);
+            cel = this.GetOperateColumn(ret.passedNodeIds, priv.Id);
             cel.HorizontalAlign = HorizontalAlign.Center;
             rowDef.Cells.Add(cel);
             #endregion

@@ -46,13 +46,13 @@ namespace SubwayWPF
                 Node sta = (Node)arStations[i];
                 ComboBoxItem cb = new ComboBoxItem();
                 cb.Content = sta.PathName + ":" + sta.StaName;
-                cb.DataContext = sta.ID;
+                cb.DataContext = sta.Id;
                 cb.Name = "A" + i.ToString();
                 cmbStart.Items.Add(cb);
 
                 ComboBoxItem cb1 = new ComboBoxItem();
                 cb1.Content = sta.PathName + ":" + sta.StaName;
-                cb1.DataContext = sta.ID;
+                cb1.DataContext = sta.Id;
                 cb1.Name = "A" + i.ToString();
                 cmbTarget.Items.Add(cb1);
 
@@ -94,12 +94,12 @@ namespace SubwayWPF
         //标记路线
         private void DrawLine()
         {
-            if (ret != null && ret.passedNodeIDs.Length > 0)
+            if (ret != null && ret.passedNodeIds.Length > 0)
             {
                 Bitmap bitmap = new Bitmap("OK.png");
                 Graphics g = Graphics.FromImage(bitmap);
 
-                string[] path = ret.passedNodeIDs;
+                string[] path = ret.passedNodeIds;
                 for (int i = 0; i < path.Length; i++)
                 {
                     Node station = bizPlanPath.GetNode(path[i]);
@@ -235,7 +235,7 @@ namespace SubwayWPF
 
             //去掉重复的站点，因为在换乘路线查询算法中，如果有换乘发生，则会产生一些重复的换乘站的
             //为了本算法的统一性，先去掉这些重复站点
-            IEnumerable passNodes = this.ret.passedNodeIDs.Distinct();
+            IEnumerable passNodes = this.ret.passedNodeIds.Distinct();
             Queue paths = new Queue();
             foreach (string v in passNodes)
             {
@@ -310,7 +310,7 @@ namespace SubwayWPF
 
             //5 column
             border = this.GetBorder(row);
-            wp = this.GetOperateColumn(ret.passedNodeIDs, priv.ID);
+            wp = this.GetOperateColumn(ret.passedNodeIds, priv.Id);
             border.Child = wp;
 
             Grid.SetRow(border, row);
@@ -330,7 +330,7 @@ namespace SubwayWPF
                     paths.Dequeue();
                     passStationCount++;
                 }
-                if (paths.Count > 0 && tmpPriv.PathID != next.PathID)
+                if (paths.Count > 0 && tmpPriv.PathId != next.PathId)
                 {
                     row++;
                     #region 正常路线
@@ -362,7 +362,7 @@ namespace SubwayWPF
 
                     //2 column
                     border = this.GetBorder(row);
-                    img = this.GetImage("A" + tmpPriv.PathID + ".png", 6, 25);
+                    img = this.GetImage("A" + tmpPriv.PathId + ".png", 6, 25);
                     border.Child = img;
 
                     Grid.SetRow(border, row);
@@ -454,7 +454,7 @@ namespace SubwayWPF
 
                     //5 column
                     border = this.GetBorder(row);
-                    wp = this.GetOperateColumn(ret.passedNodeIDs, next.ID);
+                    wp = this.GetOperateColumn(ret.passedNodeIds, next.Id);
                     border.Child = wp;
 
                     Grid.SetRow(border, row);
@@ -497,7 +497,7 @@ namespace SubwayWPF
 
                     //2 column
                     border = this.GetBorder(row);
-                    img = this.GetImage("A" + tmpPriv.PathID + ".png", 6, 25);
+                    img = this.GetImage("A" + tmpPriv.PathId + ".png", 6, 25);
                     border.Child = img;
 
                     Grid.SetRow(border, row);
@@ -585,7 +585,7 @@ namespace SubwayWPF
 
             //5 column
             border = this.GetBorder(row);
-            wp = this.GetOperateColumn(ret.passedNodeIDs, priv.ID);
+            wp = this.GetOperateColumn(ret.passedNodeIds, priv.Id);
             border.Child = wp;
 
             Grid.SetRow(border, row);

@@ -61,14 +61,14 @@ namespace BusinessObject
 
             foreach(Node node in stations)
             {
-                if (node.ID.Substring(0, 2) == originID.Trim().Substring(0, 2))
+                if (node.Id.Substring(0, 2) == originID.Trim().Substring(0, 2))
                     StaOnLine.Add(node);
             }
 
             foreach (Node node in StaOnLine)
             {
                 if (node.StaName == targetSta.StaName)
-                    destID = node.ID;
+                    destID = node.Id;
             }
 
             if (originID.Trim().Substring(0, 2) != destID.Trim().Substring(0, 2)) return null;
@@ -76,7 +76,7 @@ namespace BusinessObject
             {
                 Node station = dalStations.GetNode(originID);
                 PassedPath pass1 = new PassedPath();
-                pass1.PassedIDList.Add(originID);
+                pass1.PassedIdList.Add(originID);
 
                 //标记是否能到达目的站点，而不是到达线路终点
                 //因为到达路线终点后，也计算为一条路线，但是此线路没有到达目标站点）
@@ -84,14 +84,14 @@ namespace BusinessObject
 
                 #region 向前查找
                 Edge nextEdge = station.GetNetEdge();
-                while (nextEdge != null && nextEdge.EndNodeID != "9999" && !IsArrive)
+                while (nextEdge != null && nextEdge.EndNodeId != "9999" && !IsArrive)
                 {
-                    pass1.PassedIDList.Add(nextEdge.EndNodeID);
+                    pass1.PassedIdList.Add(nextEdge.EndNodeId);
                     pass1.Weight += nextEdge.Weight;
 
-                    if (nextEdge.EndNodeID != destID)
+                    if (nextEdge.EndNodeId != destID)
                     {
-                        station = dalStations.GetNode(nextEdge.EndNodeID);
+                        station = dalStations.GetNode(nextEdge.EndNodeId);
                         nextEdge = station.GetNetEdge();
                     }
                     else IsArrive = true;
@@ -99,7 +99,7 @@ namespace BusinessObject
                 if (IsArrive)
                 {
                     RoutePlanResult planResult =
-                        new RoutePlanResult(pass1.PassedIDList.ToArray(Type.GetType("System.String")) as string[], pass1.Weight);
+                        new RoutePlanResult(pass1.PassedIdList.ToArray(Type.GetType("System.String")) as string[], pass1.Weight);
                     planResults.Add(planResult);
                 }
                 #endregion
@@ -107,17 +107,17 @@ namespace BusinessObject
                 #region 向后查找
                 station = dalStations.GetNode(originID);
                 PassedPath pass2 = new PassedPath();
-                pass2.PassedIDList.Add(originID);
+                pass2.PassedIdList.Add(originID);
                 IsArrive = false;
                 Edge privEdge = station.GetPrivEdge();
-                while(privEdge!=null && privEdge.EndNodeID!="0000" && !IsArrive)
+                while(privEdge!=null && privEdge.EndNodeId!="0000" && !IsArrive)
                 {
-                    pass2.PassedIDList.Add(privEdge.EndNodeID);
+                    pass2.PassedIdList.Add(privEdge.EndNodeId);
                     pass2.Weight += privEdge.Weight;
 
-                    if (privEdge.EndNodeID != destID)
+                    if (privEdge.EndNodeId != destID)
                     {
-                        station = dalStations.GetNode(privEdge.EndNodeID);
+                        station = dalStations.GetNode(privEdge.EndNodeId);
                         privEdge = station.GetPrivEdge();
                     }
                     else IsArrive = true;
@@ -125,7 +125,7 @@ namespace BusinessObject
                 if (IsArrive)
                 {
                     RoutePlanResult planResult =
-                        new RoutePlanResult(pass2.PassedIDList.ToArray(Type.GetType("System.String")) as string[], pass2.Weight);
+                        new RoutePlanResult(pass2.PassedIdList.ToArray(Type.GetType("System.String")) as string[], pass2.Weight);
                     planResults.Add(planResult);
                 }
                 #endregion
@@ -165,8 +165,8 @@ namespace BusinessObject
                     {
                         //以换乘站位分割点，分别求最短路径；如果此换乘站可以到达的书啊，则肯定存在从始发站到此换乘站的直达路线
                         //和从换乘站到目标站的直达路线
-                        planResults1 = this.GetDirectPath2(originID, ce.SatrtNodeID);
-                        planResults2 = this.GetDirectPath2(ce.EndNodeID, destID);
+                        planResults1 = this.GetDirectPath2(originID, ce.SatrtNodeId);
+                        planResults2 = this.GetDirectPath2(ce.EndNodeId, destID);
 
                         //如果此分割点可以分别到达起始点和终点站，则此站点可以最为换乘一次的中间站点
                         //经过此站点的路线也为可选路线
@@ -179,8 +179,8 @@ namespace BusinessObject
                             transferData.TransferPaths[1] = planResults2;
 
                             //换乘路线（是哪条换乘边）及换乘步行时间
-                            transferData.TransferOriginID = ce.SatrtNodeID;//换乘边的换乘出发站ID
-                            transferData.TransferDestID = ce.EndNodeID;   //换乘边的换乘目的站ID
+                            transferData.TransferOriginId = ce.SatrtNodeId;//换乘边的换乘出发站ID
+                            transferData.TransferDestId = ce.EndNodeId;   //换乘边的换乘目的站ID
                             transferData.TransferEdgeWeight = ce.Weight;
                             transferDatas.Add(transferData);
                         }
@@ -208,8 +208,8 @@ namespace BusinessObject
                         split2 = tmpTp2;
 
                         //换乘路线及换乘步行时间
-                        TransferOriginID = transferDatas[i].TransferOriginID;
-                        TransferDestID = transferDatas[i].TransferDestID;
+                        TransferOriginID = transferDatas[i].TransferOriginId;
+                        TransferDestID = transferDatas[i].TransferDestId;
                         TransferEdgeWeight = transferDatas[i].TransferEdgeWeight;
                     }
                     else
@@ -220,8 +220,8 @@ namespace BusinessObject
                             split1 = tmpTp1;
                             split2 = tmpTp2;
                             //换乘路线及换乘时间
-                            TransferOriginID = transferDatas[i].TransferOriginID;
-                            TransferDestID = transferDatas[i].TransferDestID;
+                            TransferOriginID = transferDatas[i].TransferOriginId;
+                            TransferDestID = transferDatas[i].TransferDestId;
                             TransferEdgeWeight = transferDatas[i].TransferEdgeWeight;
                         }
                     }
@@ -229,9 +229,9 @@ namespace BusinessObject
 
                 //合并路线；要注意换乘站以及换乘时间
                 RoutePlanResult lastRs = new RoutePlanResult();
-                lastRs.AddPassedNodes(split1.passedNodeIDs, split1.weight);
+                lastRs.AddPassedNodes(split1.passedNodeIds, split1.weight);
                 lastRs.AddPassedNodes(new string[2] { TransferOriginID, TransferDestID }, TransferEdgeWeight);
-                lastRs.AddPassedNodes(split2.passedNodeIDs, split2.weight);
+                lastRs.AddPassedNodes(split2.passedNodeIds, split2.weight);
                 return lastRs;
             }
             return null;
@@ -270,13 +270,13 @@ namespace BusinessObject
                                 if (destEdge.IsStep)
                                 {
                                     //两个换乘站的直接路线
-                                    List<RoutePlanResult> directLns = this.GetDirectPath2(originEdge.EndNodeID, destEdge.EndNodeID);
+                                    List<RoutePlanResult> directLns = this.GetDirectPath2(originEdge.EndNodeId, destEdge.EndNodeId);
                                     //是可选路线
                                     if (directLns != null)
                                     {
                                         ArrayList tmpResult = new ArrayList();
                                         //始发站和换乘站的路线
-                                        List<RoutePlanResult> r1 = this.GetDirectPath2(originID, originEdge.SatrtNodeID);
+                                        List<RoutePlanResult> r1 = this.GetDirectPath2(originID, originEdge.SatrtNodeId);
                                         //增加始发站到一个换乘站的路线
                                         tmpResult.Add(r1);//0
                                         //增加换乘站
@@ -284,13 +284,13 @@ namespace BusinessObject
                                         tmpResult.Add(directLns);//2
                                         //构造新的边，由于destEdge方向不对
                                         Edge e = new Edge();
-                                        e.SatrtNodeID = destEdge.EndNodeID;
-                                        e.EndNodeID = destEdge.SatrtNodeID;
+                                        e.SatrtNodeId = destEdge.EndNodeId;
+                                        e.EndNodeId = destEdge.SatrtNodeId;
                                         e.Weight = destEdge.Weight;
                                         e.IsStep = destEdge.IsStep;
                                         tmpResult.Add(e);//3
 
-                                        List<RoutePlanResult> r2 = this.GetDirectPath2(destEdge.SatrtNodeID, destID);
+                                        List<RoutePlanResult> r2 = this.GetDirectPath2(destEdge.SatrtNodeId, destID);
                                         tmpResult.Add(r2);//4
                                         ResultLines.Add(ResultLines.Count.ToString(), tmpResult);
                                     }
@@ -311,21 +311,21 @@ namespace BusinessObject
                 //始发站到第一个换乘站的最短路线
                 List<RoutePlanResult> r1 = lineArrys[0] as List<RoutePlanResult>;
                 RoutePlanResult directR1 = this.GetShortestTimepath(r1);
-                tmpResult.AddPassedNodes(directR1.passedNodeIDs, directR1.weight);
+                tmpResult.AddPassedNodes(directR1.passedNodeIds, directR1.weight);
                 //第一个换乘站
                 Edge oE = lineArrys[1] as Edge;
-                tmpResult.AddPassedNodes(new string[2] { oE.SatrtNodeID, oE.EndNodeID }, oE.Weight);
+                tmpResult.AddPassedNodes(new string[2] { oE.SatrtNodeId, oE.EndNodeId }, oE.Weight);
                 //换乘站点之间的直接路径
                 List<RoutePlanResult> r2 = lineArrys[2] as List<RoutePlanResult>;
                 RoutePlanResult directR2 = this.GetShortestTimepath(r2);
-                tmpResult.AddPassedNodes(directR2.passedNodeIDs, directR2.weight);
+                tmpResult.AddPassedNodes(directR2.passedNodeIds, directR2.weight);
                 //第二个换乘站
                 Edge tE = lineArrys[3] as Edge;
-                tmpResult.AddPassedNodes(new string[2] { tE.SatrtNodeID, tE.EndNodeID }, tE.Weight);
+                tmpResult.AddPassedNodes(new string[2] { tE.SatrtNodeId, tE.EndNodeId }, tE.Weight);
                 //第二个换乘站和目的站的直接路径
                 List<RoutePlanResult> r3 = lineArrys[4] as List<RoutePlanResult>;
                 RoutePlanResult directR3 = this.GetShortestTimepath(r3);
-                tmpResult.AddPassedNodes(directR3.passedNodeIDs, directR3.weight);
+                tmpResult.AddPassedNodes(directR3.passedNodeIds, directR3.weight);
 
                 if (lastResult == null)
                 {
@@ -374,7 +374,7 @@ namespace BusinessObject
                 ArrayList ResultPath = new ArrayList(); 
 
                 //第一步，计算开始节点和第一个换乘节点的路线
-                List<RoutePlanResult> begin = this.GetDirectPath2(originID, transferPath.Peek().ID);
+                List<RoutePlanResult> begin = this.GetDirectPath2(originID, transferPath.Peek().Id);
                 if (begin == null) continue;
                 RoutePlanResult beginMinPath = this.GetShortestTimepath(begin);
 
@@ -418,13 +418,13 @@ namespace BusinessObject
                         if (i == 0)
                         {
                             RoutePlanResult tm = onePath[i] as RoutePlanResult;
-                            rpr.AddPassedNodes(tm.passedNodeIDs, tm.weight);
+                            rpr.AddPassedNodes(tm.passedNodeIds, tm.weight);
                         }
                         else
                         {
                             TransferData trd = onePath[i] as TransferData;
-                            rpr.AddPassedNodes(new string[2] { trd.TransferOriginID, trd.TransferDestID }, trd.TransferEdgeWeight);
-                            rpr.AddPassedNodes(trd.TransferPath.passedNodeIDs, trd.TransferPath.weight);
+                            rpr.AddPassedNodes(new string[2] { trd.TransferOriginId, trd.TransferDestId }, trd.TransferEdgeWeight);
+                            rpr.AddPassedNodes(trd.TransferPath.passedNodeIds, trd.TransferPath.weight);
                         }
                     }
                     finnalPath.Add(rpr);
@@ -464,15 +464,15 @@ namespace BusinessObject
 
                 if (e.IsStep)
                 {
-                    List<RoutePlanResult> tmp1 = this.GetDirectPath2(e.EndNodeID, targetNode.ID);
+                    List<RoutePlanResult> tmp1 = this.GetDirectPath2(e.EndNodeId, targetNode.Id);
 
                     if (tmp1 != null && tmp1.Count > 0)
                     {
                         RoutePlanResult minTmp = this.GetShortestTimepath(tmp1);
 
                         TransferData td = new TransferData();
-                        td.TransferOriginID = e.SatrtNodeID;
-                        td.TransferDestID = e.EndNodeID;
+                        td.TransferOriginId = e.SatrtNodeId;
+                        td.TransferDestId = e.EndNodeId;
                         td.TransferEdgeWeight = e.Weight;
                         td.TransferPath = minTmp;
 
@@ -576,7 +576,7 @@ namespace BusinessObject
             for (int i = 0; i < DalStations.galPathExStations.Count; i++)
             {
                 Node tNode = DalStations.galPathExStations[i] as Node;
-                if (tNode.PathID == lineID)
+                if (tNode.PathId == lineID)
                     nodes.Add(tNode);
             }
             return nodes;

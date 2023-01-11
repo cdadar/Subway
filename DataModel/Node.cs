@@ -8,10 +8,10 @@ namespace SubwayQuery.DataModel
 {
     public class Node
     {
-        public string ID;         //车站ID
+        public string Id;         //车站ID
         public string StaName = "";//车站名称
         public string PathName = "";//线路名称
-        public string PathID = "";  //线路ID
+        public string PathId = "";  //线路ID
         public string GPS = "";    //卫星定位
         public string IsExchangeSta = "NO";//是否换乘
 
@@ -27,9 +27,9 @@ namespace SubwayQuery.DataModel
         #region  构造函数
         public Node(string id, string staName, string pathName, string pathId, string gps, string isExchangeSta, double X, double Y)
         {
-            this.ID = id;
+            this.Id = id;
             this.StaName = staName;
-            this.PathID = pathId;
+            this.PathId = pathId;
             this.PathName = pathName;
             this.IsExchangeSta = isExchangeSta;
             this.dMapX = X;
@@ -43,7 +43,7 @@ namespace SubwayQuery.DataModel
 
         public Node(string id)
         {
-            this.ID = id;
+            this.Id = id;
         }
 
         #endregion
@@ -83,9 +83,9 @@ namespace SubwayQuery.DataModel
         public Node Clone()
         {
             Node cloneNode = new Node();
-            cloneNode.ID = this.ID;
+            cloneNode.Id = this.Id;
             cloneNode.PathName = this.PathName;
-            cloneNode.PathID = this.PathID;
+            cloneNode.PathId = this.PathId;
             cloneNode.IsExchangeSta = this.IsExchangeSta;
             cloneNode.dMapX = this.dMapX;
             cloneNode.dMapY = this.dMapY;
@@ -100,9 +100,9 @@ namespace SubwayQuery.DataModel
                 Edge e = new Edge();
 
                 e.EdgeDirection = curE.EdgeDirection;
-                e.EndNodeID = curE.EndNodeID;
+                e.EndNodeId = curE.EndNodeId;
                 e.IsStep = curE.IsStep;
-                e.SatrtNodeID = curE.SatrtNodeID;
+                e.SatrtNodeId = curE.SatrtNodeId;
                 e.Weight = curE.Weight;
 
                 edges.Add(e);

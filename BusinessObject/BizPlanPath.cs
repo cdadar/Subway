@@ -78,8 +78,8 @@ namespace BusinessObject
                     Edge e = station.EdgeList[j] as Edge;
                     if (e.IsStep)
                     {
-                        if ((e.SatrtNodeID == originId && e.EndNodeID == destId)
-                            || (e.SatrtNodeID == destId && e.EndNodeID == originId))
+                        if ((e.SatrtNodeId == originId && e.EndNodeId == destId)
+                            || (e.SatrtNodeId == destId && e.EndNodeId == originId))
                         {
                             ret = "您想要查询的车站时换乘路线！您不需要乘车！";
                             return false;
@@ -104,7 +104,7 @@ namespace BusinessObject
             {
                 Edge e = edges[i] as Edge;
 
-                if (e.SatrtNodeID == sta1.ID && e.EndNodeID == sta2.ID)
+                if (e.SatrtNodeId == sta1.Id && e.EndNodeId == sta2.Id)
                     return e.Weight;
             }
             return double.MaxValue;

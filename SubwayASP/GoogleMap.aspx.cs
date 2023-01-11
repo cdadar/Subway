@@ -37,9 +37,9 @@ namespace SubwayASP
                     for (int i = 0; i < allPassStations.Length; i++)
                     {
                         Node station = new BizPlanPath().GetNode(allPassStations[i]);
-                        ListItem itm = new ListItem(station.StaName, station.ID);
+                        ListItem itm = new ListItem(station.StaName, station.Id);
                         //正在定位车站的红色显示
-                        if (station.ID == curStation)
+                        if (station.Id == curStation)
                         {
                             itm.Selected = true;
                             itm.Attributes.Add("style", "color:red");

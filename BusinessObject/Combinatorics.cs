@@ -111,19 +111,19 @@ namespace BusinessObject
         /// <summary>
         /// 排列函数
         /// </summary>
-        /// <param name="reslut">返回值数组</param>
+        /// <param name="result">返回值数组</param>
         /// <param name="elements">可供选择的元素数组</param>
         ///  <param name="m">目标选定元素个数</param>           
         /// <param name="x">当前返回值数组的列坐标</param>
         /// <param name="y">当前返回值数组的行坐标</param>
-        private static void Arrange(ref int[,] reslut, ArrayList elements, int m, int x, int y)
+        private static void Arrange(ref int[,] result, ArrayList elements, int m, int x, int y)
         {
             int sub = ArrangeCount(m - 1, elements.Count - 1);                    //求取当前子排列的个数
             for (int i = 0; i < elements.Count; i++, y += sub)                    //每个元素均循环一次,每次循环后移动行指针
             {
-                int val = RemoveAndWrite(elements, i, ref reslut, x, y, sub);
+                int val = RemoveAndWrite(elements, i, ref result, x, y, sub);
                 if (m > 1)                                                                 //递归条件为子排列数大于1
-                    Arrange(ref reslut, elements, m - 1, x + 1, y);
+                    Arrange(ref result, elements, m - 1, x + 1, y);
                 elements.Insert(i, val);                                              //恢复刚才删除的元素                  
             }
         }
@@ -131,12 +131,12 @@ namespace BusinessObject
         /// <summary>
         /// 组合函数
         /// </summary>
-        /// <param name="reslut">返回值数组</param>
+        /// <param name="result">返回值数组</param>
         /// <param name="elements">可供选择的元素数组</param>
         ///  <param name="m">目标选定元素个数</param>           
         /// <param name="x">当前返回值数组的列坐标</param>
         /// <param name="y">当前返回值数组的行坐标</param>
-        private static void Combination(ref int[,] reslut, ArrayList elements, int m, int x, int y)
+        private static void Combination(ref int[,] result, ArrayList elements, int m, int x, int y)
         {
             ArrayList tmpElements = new ArrayList();                              //所有本循环使用的元素都将暂时存放在这个数组
             int elementsCount = elements.Count;                                        //先记录可选元素个数
@@ -144,10 +144,10 @@ namespace BusinessObject
             for (int i = elementsCount - 1; i >= m - 1; i--, y += sub)            //从elementsCount-1(即n-1)到m-1的循环,每次循环后移动行指针
             {
                 sub = CombinationCount(m - 1, i);                                   //求取当前子组合的个数
-                int val = RemoveAndWrite(elements, 0, ref reslut, x, y, sub);
+                int val = RemoveAndWrite(elements, 0, ref result, x, y, sub);
                 tmpElements.Add(val);                                                 //把这个可选元素存放到临时数组,循环结束后一并恢复到elements数组中                 
                 if (sub > 1 || (elements.Count + 1 == m && elements.Count > 0))  //递归条件为 子组合数大于1 或 可选元素个数+1等于当前目标选择元素个数且可选元素个数大于1
-                    Combination(ref reslut, elements, m - 1, x + 1, y);
+                    Combination(ref result, elements, m - 1, x + 1, y);
             }
             elements.InsertRange(0, tmpElements);                                 //一次性把上述循环删除的可选元素恢复到可选元素数组中           
         }
@@ -155,12 +155,12 @@ namespace BusinessObject
         /// <summary>
         /// 返回由Index指定的可选元素值,并在数组中删除之,再从y行开始在x列中连续写入subComb个值
         /// </summary>
-        private static int RemoveAndWrite(ArrayList elements, int index, ref int[,] reslut, int x, int y, int count)
+        private static int RemoveAndWrite(ArrayList elements, int index, ref int[,] result, int x, int y, int count)
         {
             int val = (int)elements[index];
             elements.RemoveAt(index);
             for (int i = 0; i < count; i++)
-                reslut[x, y + i] = val;
+                result[x, y + i] = val;
             return val;
         }
 
