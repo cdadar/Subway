@@ -1,23 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using SubwayQuery.DataModel;
 using BusinessObject;
 
 namespace SubwayASP
 {
-    public partial class GoogleMap : System.Web.UI.Page
+    public partial class GoogleMap : Page
     {
-        
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
-                this.InitStation();
-                this.InitGoogleMap();
+                InitStation();
+                InitGoogleMap();
             }
         }
 
@@ -25,28 +20,28 @@ namespace SubwayASP
         {
             if (Request.QueryString["data"] != null)
             {
-                string data = Request.QueryString["data"].ToString();
+                var data = Request.QueryString["data"];
                 //分析数据，显示地图
                 if (data.Trim().Length > 0)
                 {
-                    string[] sp1 = data.Split(';');
-                    
-                    string[] allPassStations = sp1[0].Split(','); 
-                    string curStation = sp1[1];//得到用户选择的车站
+                    var sp1 = data.Split(';');
 
-                    for (int i = 0; i < allPassStations.Length; i++)
+                    var allPassStations = sp1[0].Split(',');
+                    var curStation = sp1[1]; //得到用户选择的车站
+
+                    for (var i = 0; i < allPassStations.Length; i++)
                     {
-                        Node station = new BizPlanPath().GetNode(allPassStations[i]);
-                        ListItem itm = new ListItem(station.StaName, station.Id);
+                        var station = new BizPlanPath().GetNode(allPassStations[i]);
+                        var itm = new ListItem(station.StaName, station.Id);
                         //正在定位车站的红色显示
                         if (station.Id == curStation)
                         {
                             itm.Selected = true;
                             itm.Attributes.Add("style", "color:red");
                         }
-                        this.bltStations.Items.Add(itm);
-                    }
 
+                        bltStations.Items.Add(itm);
+                    }
                 }
             }
         }
@@ -55,31 +50,33 @@ namespace SubwayASP
         {
             if (Request.QueryString["data"] != null)
             {
-                string data = Request.QueryString["data"].ToString();
+                var data = Request.QueryString["data"];
                 //分析数据，显示地图
                 if (data.Trim().Length > 0)
                 {
-                    string[] sp1 = data.Split(';');
-                    
-                    string[] allPassStations = sp1[0].Split(',');
-                    string curStation = sp1[1];//得到用户选择的车站
-                    string GPS = "";
+                    var sp1 = data.Split(';');
 
-                    Node station = new BizPlanPath().GetNode(curStation);
+                    var allPassStations = sp1[0].Split(',');
+                    var curStation = sp1[1]; //得到用户选择的车站
+                    var GPS = "";
+
+                    var station = new BizPlanPath().GetNode(curStation);
                     GPS = station.GPS;
-                    string[] strsGps = GPS.Split(',');
-                    this.googleMap.Attributes.Add("onload", "initialize(" + strsGps[0] + "," + strsGps[1] + ");");
+                    var strsGps = GPS.Split(',');
+                    googleMap.Attributes.Add("onload", "initialize(" + strsGps[0] + "," + strsGps[1] + ");");
                 }
                 else
-                    this.googleMap.Attributes.Add("onload", "initialize(39.9493,116.3975);");
+                {
+                    googleMap.Attributes.Add("onload", "initialize(39.9493,116.3975);");
+                }
             }
         }
 
         protected void bltStations_Click(object sender, BulletedListEventArgs e)
         {
-            this.bltStations.Items[e.Index].Attributes.Add("style", "color:red");
-            ListItem list = this.bltStations.Items[e.Index];
-            string data = Request.QueryString["data"].ToString().Split(';')[0];
+            bltStations.Items[e.Index].Attributes.Add("style", "color:red");
+            var list = bltStations.Items[e.Index];
+            var data = Request.QueryString["data"].Split(';')[0];
             Response.Redirect("GoogleMap.aspx?data=" + data + ";" + list.Value.Trim());
         }
     }

@@ -1,496 +1,770 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <subway>
 
-  <path name="一号线" id="01">
-    <station id="0101" IsExchangeSta="NO" PrivSta="0000" NextSta="0102" X="590" Y="1792" ToPrivTime="3" ToNextTime="3"  GPS="39.92663, 116.177794" name="苹果园" />
-    <station id="0102" IsExchangeSta="NO" PrivSta="0101" NextSta="0103" X="658" Y="1858" ToPrivTime="3" ToNextTime="3"  GPS="39.9113821386774, 116.1833381652832" name="古城" />
-    <station id="0103" IsExchangeSta="NO" PrivSta="0102" NextSta="0104" X="774" Y="1858" ToPrivTime="3" ToNextTime="3"  GPS="39.92843137829837, 116.19140625" name="八角游乐园" />
-    <station id="0104" IsExchangeSta="NO" PrivSta="0103" NextSta="0105" X="872" Y="1858" ToPrivTime="3" ToNextTime="3"  GPS="39.90743807472299, 116.23571801930666" name="八宝山" />
-    <station id="0105" IsExchangeSta="NO" PrivSta="0104" NextSta="0106" X="964" Y="1858" ToPrivTime="3" ToNextTime="3"  GPS="39.90741544250619, 116.25298976898193" name="玉泉路" />
-    <station id="0106" IsExchangeSta="NO" PrivSta="0105" NextSta="0107" X="1056" Y="1858" ToPrivTime="3" ToNextTime="3"  GPS="39.9074483620918, 116.27399682998657" name="五棵松" />
-    <station id="0107" IsExchangeSta="NO" PrivSta="0106" NextSta="0108" X="1154" Y="1858" ToPrivTime="3" ToNextTime="3"  GPS="39.907481281661575, 116.29508972167969" name="万寿路" />
-    <station id="0108" IsExchangeSta="YE" PrivSta="0107" NextSta="0109" X="1280" Y="1858" ToPrivTime="3" ToNextTime="3"  GPS="39.9074483620918, 116.31038904190063" name="公主坟" >
-      <ExStation TOPath="10,1040" NeedTime="2"/>
-    </station>
-    <station id="0109" IsExchangeSta="NO" PrivSta="0108" NextSta="0110" X="1374" Y="1858" ToPrivTime="3" ToNextTime="3"  GPS="39.9075306609866, 116.3239073753357" name="军事博物馆" />
-    <station id="0110" IsExchangeSta="NO" PrivSta="0109" NextSta="0111" X="1502" Y="1858" ToPrivTime="3" ToNextTime="3"  GPS="39.90736606309809, 116.3378119468689" name="木樨地" />
-    <station id="0111" IsExchangeSta="NO" PrivSta="0110" NextSta="0112" X="1598" Y="1858" ToPrivTime="3" ToNextTime="3"  GPS="39.907234384502566, 116.35248899459839" name="南礼士路" />
-    <station id="0112" IsExchangeSta="YE" PrivSta="0111" NextSta="0113" X="1710" Y="1858" ToPrivTime="3" ToNextTime="3"  GPS="39.907234384502566, 116.35652303695679" name="复兴门" >
-      <ExStation TOPath="02,0204" NeedTime="2"/>
-    </station>
-    <station id="0113" IsExchangeSta="YE" PrivSta="0112" NextSta="0114" X="1890" Y="1858" ToPrivTime="3" ToNextTime="3"  GPS="39.90741544250619, 116.37426853179932" name="西单">
-      <ExStation TOPath="04,0417" NeedTime="3"/>
-    </station>
-    <station id="0114" IsExchangeSta="NO" PrivSta="0113" NextSta="0115" X="2014" Y="1858" ToPrivTime="3" ToNextTime="3"  GPS="39.90749774144054, 116.39171361923218" name="天安门西" />
-    <station id="0115" IsExchangeSta="NO" PrivSta="0114" NextSta="0116" X="2118" Y="1858" ToPrivTime="3" ToNextTime="3"  GPS="39.90779401678561, 116.40156269073486" name="天安门东" />
-    <station id="0116" IsExchangeSta="NO" PrivSta="0115" NextSta="0117" X="2222" Y="1858" ToPrivTime="3" ToNextTime="3"  GPS="39.908057371572205, 116.41149759292603" name="王府井" />
-    <station id="0117" IsExchangeSta="YE" PrivSta="0116" NextSta="0118" X="2344" Y="1858" ToPrivTime="3" ToNextTime="3"  GPS="39.90830426576516, 116.42001628875732" name="东单" >
-      <ExStation TOPath="05,0517" NeedTime="4"></ExStation>
-    </station>
-    <station id="0118" IsExchangeSta="YE" PrivSta="0117" NextSta="0119" X="2498" Y="1858" ToPrivTime="3" ToNextTime="3"  GPS="39.908551159068324, 116.43585205078125" name="建国门" >
-      <ExStation TOPath="02,0211" NeedTime="3"/>
-    </station>
-    <station id="0119" IsExchangeSta="NO" PrivSta="0118" NextSta="0120" X="2608" Y="1858" ToPrivTime="3" ToNextTime="3"  GPS="39.90845240185384, 116.45042181015015" name="永安里" />
-    <station id="0120" IsExchangeSta="YE" PrivSta="0119" NextSta="0121" X="2722" Y="1858" ToPrivTime="3" ToNextTime="3"  GPS="39.90925891493912, 116.46183729171753" name="国贸" >
-      <ExStation TOPath="10,1020" NeedTime="3"/>
-    </station>
-    <station id="0121" IsExchangeSta="NO" PrivSta="0120" NextSta="0122" X="2846" Y="1858" ToPrivTime="3" ToNextTime="3"  GPS="39.90818904858585, 116.47664308547974" name="大望路" />
-    <station id="0122" IsExchangeSta="NO" PrivSta="0121" NextSta="0123" X="2944" Y="1866" ToPrivTime="3" ToNextTime="3"  GPS="39.908699294623105, 116.4979076385498" name="四惠" />
-    <station id="0123" IsExchangeSta="YE" PrivSta="0122" NextSta="9999" X="3028" Y="1866" ToPrivTime="3" ToNextTime="3"  GPS="39.90849303634993, 116.51536714285612" name="四惠东" >
-      <ExStation TOPath="30,3001" NeedTime="3"/>
-    </station>
-  </path>
+    <path name="一号线" id="01">
+        <station id="0101" IsExchangeSta="NO" PrivSta="0000" NextSta="0102" X="590" Y="1792" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.92663, 116.177794" name="苹果园"/>
+        <station id="0102" IsExchangeSta="NO" PrivSta="0101" NextSta="0103" X="658" Y="1858" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.9113821386774, 116.1833381652832" name="古城"/>
+        <station id="0103" IsExchangeSta="NO" PrivSta="0102" NextSta="0104" X="774" Y="1858" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.92843137829837, 116.19140625" name="八角游乐园"/>
+        <station id="0104" IsExchangeSta="NO" PrivSta="0103" NextSta="0105" X="872" Y="1858" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.90743807472299, 116.23571801930666" name="八宝山"/>
+        <station id="0105" IsExchangeSta="NO" PrivSta="0104" NextSta="0106" X="964" Y="1858" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.90741544250619, 116.25298976898193" name="玉泉路"/>
+        <station id="0106" IsExchangeSta="NO" PrivSta="0105" NextSta="0107" X="1056" Y="1858" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.9074483620918, 116.27399682998657" name="五棵松"/>
+        <station id="0107" IsExchangeSta="NO" PrivSta="0106" NextSta="0108" X="1154" Y="1858" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.907481281661575, 116.29508972167969" name="万寿路"/>
+        <station id="0108" IsExchangeSta="YE" PrivSta="0107" NextSta="0109" X="1280" Y="1858" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.9074483620918, 116.31038904190063" name="公主坟">
+            <ExStation TOPath="10,1040" NeedTime="2"/>
+        </station>
+        <station id="0109" IsExchangeSta="NO" PrivSta="0108" NextSta="0110" X="1374" Y="1858" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.9075306609866, 116.3239073753357" name="军事博物馆"/>
+        <station id="0110" IsExchangeSta="NO" PrivSta="0109" NextSta="0111" X="1502" Y="1858" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.90736606309809, 116.3378119468689" name="木樨地"/>
+        <station id="0111" IsExchangeSta="NO" PrivSta="0110" NextSta="0112" X="1598" Y="1858" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.907234384502566, 116.35248899459839" name="南礼士路"/>
+        <station id="0112" IsExchangeSta="YE" PrivSta="0111" NextSta="0113" X="1710" Y="1858" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.907234384502566, 116.35652303695679" name="复兴门">
+            <ExStation TOPath="02,0204" NeedTime="2"/>
+        </station>
+        <station id="0113" IsExchangeSta="YE" PrivSta="0112" NextSta="0114" X="1890" Y="1858" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.90741544250619, 116.37426853179932" name="西单">
+            <ExStation TOPath="04,0417" NeedTime="3"/>
+        </station>
+        <station id="0114" IsExchangeSta="NO" PrivSta="0113" NextSta="0115" X="2014" Y="1858" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.90749774144054, 116.39171361923218" name="天安门西"/>
+        <station id="0115" IsExchangeSta="NO" PrivSta="0114" NextSta="0116" X="2118" Y="1858" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.90779401678561, 116.40156269073486" name="天安门东"/>
+        <station id="0116" IsExchangeSta="NO" PrivSta="0115" NextSta="0117" X="2222" Y="1858" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.908057371572205, 116.41149759292603" name="王府井"/>
+        <station id="0117" IsExchangeSta="YE" PrivSta="0116" NextSta="0118" X="2344" Y="1858" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.90830426576516, 116.42001628875732" name="东单">
+            <ExStation TOPath="05,0517" NeedTime="4"></ExStation>
+        </station>
+        <station id="0118" IsExchangeSta="YE" PrivSta="0117" NextSta="0119" X="2498" Y="1858" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.908551159068324, 116.43585205078125" name="建国门">
+            <ExStation TOPath="02,0211" NeedTime="3"/>
+        </station>
+        <station id="0119" IsExchangeSta="NO" PrivSta="0118" NextSta="0120" X="2608" Y="1858" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.90845240185384, 116.45042181015015" name="永安里"/>
+        <station id="0120" IsExchangeSta="YE" PrivSta="0119" NextSta="0121" X="2722" Y="1858" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.90925891493912, 116.46183729171753" name="国贸">
+            <ExStation TOPath="10,1020" NeedTime="3"/>
+        </station>
+        <station id="0121" IsExchangeSta="NO" PrivSta="0120" NextSta="0122" X="2846" Y="1858" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.90818904858585, 116.47664308547974" name="大望路"/>
+        <station id="0122" IsExchangeSta="NO" PrivSta="0121" NextSta="0123" X="2944" Y="1866" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.908699294623105, 116.4979076385498" name="四惠"/>
+        <station id="0123" IsExchangeSta="YE" PrivSta="0122" NextSta="9999" X="3028" Y="1866" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.90849303634993, 116.51536714285612" name="四惠东">
+            <ExStation TOPath="30,3001" NeedTime="3"/>
+        </station>
+    </path>
 
-  <path name="二号线" id="02">
-    <station id="0201" IsExchangeSta="YE" PrivSta="0000" NextSta="0202" X="1711" Y="1560" ToPrivTime="3" ToNextTime="3" GPS="39.94047519288632, 116.35542869567871" name="西直门">
-      <ExStation TOPath="04,0412" NeedTime="2"></ExStation>
-      <ExStation TOPath="13,1301" NeedTime="3"></ExStation>
-    </station>
-    <station id="0202" IsExchangeSta="YE" PrivSta="0201" NextSta="0203" X="1711" Y="1684" ToPrivTime="3" ToNextTime="3" GPS="39.93233104208208, 116.352853775024418" name="车公庄">
-      <ExStation TOPath="06,0606" NeedTime="2"></ExStation>
-    </station>
-    <station id="0203" IsExchangeSta="NO" PrivSta="0202" NextSta="0204" X="1711" Y="1770" ToPrivTime="3" ToNextTime="3" GPS="39.92350094740959, 116.35601207613945" name="阜成门"></station>
-    <station id="0204" IsExchangeSta="YE" PrivSta="0203" NextSta="0205" X="1711" Y="1856" ToPrivTime="3" ToNextTime="3" GPS="39.907240042572425, 116.35651599615812" name="复兴门">
-      <ExStation TOPath="01,0112" NeedTime="2"></ExStation>
-    </station>
-    <station id="0205" IsExchangeSta="NO" PrivSta="0204" NextSta="0206" X="1721" Y="1955" ToPrivTime="3" ToNextTime="3" GPS="39.8992570700208, 116.36335294693708" name="长椿街"></station>
-    <station id="0206" IsExchangeSta="YE" PrivSta="0205" NextSta="0207" X="1890" Y="1972" ToPrivTime="3" ToNextTime="3" GPS="39.89981059435628, 116.37426853179932" name="宣武门">
-      <ExStation TOPath="04,0418" NeedTime="2"></ExStation>
-    </station>
-    <station id="0207" IsExchangeSta="NO" PrivSta="0206" NextSta="0208" X="1986" Y="1972" ToPrivTime="3" ToNextTime="3" GPS="39.90007397983073, 116.38420343399048" name="和平门"></station>
-    <station id="0208" IsExchangeSta="NO" PrivSta="0207" NextSta="0209" X="2102" Y="1972" ToPrivTime="3" ToNextTime="3" GPS="39.90013982604117, 116.39795780181885" name="前门"></station>
-    <station id="0209" IsExchangeSta="YE" PrivSta="0208" NextSta="0210" X="2343" Y="1972" ToPrivTime="3" ToNextTime="3" GPS="39.90102874368918, 116.41737699508667" name="崇文门">
-      <ExStation TOPath="05,0518" NeedTime="2"></ExStation>
-    </station>
-    <station id="0210" IsExchangeSta="NO" PrivSta="0209" NextSta="0211" X="2481" Y="1963" ToPrivTime="3" ToNextTime="3" GPS="39.90506165113501, 116.42717242240906" name="北京站"></station>
-    <station id="0211" IsExchangeSta="YE" PrivSta="0210" NextSta="0212" X="2497" Y="1858" ToPrivTime="3" ToNextTime="3" GPS="39.90855501676913, 116.43584299832582" name="建国门">
-      <ExStation TOPath="01,0118" NeedTime="2"></ExStation>
-    </station>
-    <station id="0212" IsExchangeSta="YE" PrivSta="0211" NextSta="0213" X="2497" Y="1742" ToPrivTime="3" ToNextTime="3" GPS="39.924592944019594, 116.43463801592588" name="朝阳门">
-      <ExStation TOPath="06,0611" NeedTime="2"></ExStation>
-    </station>
-    <station id="0213" IsExchangeSta="NO" PrivSta="0212" NextSta="0214" X="2497" Y="1655" ToPrivTime="3" ToNextTime="3" GPS="39.933664044710554, 116.43421690911055" name="东四十条"></station>
-    <station id="0214" IsExchangeSta="YE" PrivSta="0213" NextSta="0215" X="2497" Y="1558" ToPrivTime="3" ToNextTime="3" GPS="39.94113326375916, 116.43349170684814" name="东直门">
-      <ExStation TOPath="13,1316" NeedTime="2"></ExStation>
-      <ExStation TOPath="19,1901" NeedTime="2"></ExStation>
-    </station>
-    <station id="0215" IsExchangeSta="YE" PrivSta="0214" NextSta="0216" X="2342" Y="1505" ToPrivTime="3" ToNextTime="3" GPS="39.949337025409484, 116.41698908060789" name="雍和宫">
-      <ExStation TOPath="05,0512" NeedTime="2"></ExStation>
-    </station>
-    <station id="0216" IsExchangeSta="NO" PrivSta="0215" NextSta="0217" X="2214" Y="1505" ToPrivTime="3" ToNextTime="3" GPS="39.949177668560566, 116.40825748443604" name="安定门"></station>
-    <station id="0217" IsExchangeSta="YE" PrivSta="0216" NextSta="0218" X="2085" Y="1505" ToPrivTime="3" ToNextTime="3" GPS="39.94797682565708, 116.39383792877197" name="鼓楼大街">
-      <ExStation TOPath="08,0812" NeedTime="2"></ExStation>
-    </station>
-    <station id="0218" IsExchangeSta="NO" PrivSta="0217" NextSta="9999" X="1863" Y="1505" ToPrivTime="3" ToNextTime="3" GPS="39.94703916654227, 116.37675762176514" name="积水潭"></station>
-  </path>
+    <path name="二号线" id="02">
+        <station id="0201" IsExchangeSta="YE" PrivSta="0000" NextSta="0202" X="1711" Y="1560" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.94047519288632, 116.35542869567871" name="西直门">
+            <ExStation TOPath="04,0412" NeedTime="2"></ExStation>
+            <ExStation TOPath="13,1301" NeedTime="3"></ExStation>
+        </station>
+        <station id="0202" IsExchangeSta="YE" PrivSta="0201" NextSta="0203" X="1711" Y="1684" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.93233104208208, 116.352853775024418" name="车公庄">
+            <ExStation TOPath="06,0606" NeedTime="2"></ExStation>
+        </station>
+        <station id="0203" IsExchangeSta="NO" PrivSta="0202" NextSta="0204" X="1711" Y="1770" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.92350094740959, 116.35601207613945" name="阜成门"></station>
+        <station id="0204" IsExchangeSta="YE" PrivSta="0203" NextSta="0205" X="1711" Y="1856" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.907240042572425, 116.35651599615812" name="复兴门">
+            <ExStation TOPath="01,0112" NeedTime="2"></ExStation>
+        </station>
+        <station id="0205" IsExchangeSta="NO" PrivSta="0204" NextSta="0206" X="1721" Y="1955" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.8992570700208, 116.36335294693708" name="长椿街"></station>
+        <station id="0206" IsExchangeSta="YE" PrivSta="0205" NextSta="0207" X="1890" Y="1972" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.89981059435628, 116.37426853179932" name="宣武门">
+            <ExStation TOPath="04,0418" NeedTime="2"></ExStation>
+        </station>
+        <station id="0207" IsExchangeSta="NO" PrivSta="0206" NextSta="0208" X="1986" Y="1972" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.90007397983073, 116.38420343399048" name="和平门"></station>
+        <station id="0208" IsExchangeSta="NO" PrivSta="0207" NextSta="0209" X="2102" Y="1972" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.90013982604117, 116.39795780181885" name="前门"></station>
+        <station id="0209" IsExchangeSta="YE" PrivSta="0208" NextSta="0210" X="2343" Y="1972" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.90102874368918, 116.41737699508667" name="崇文门">
+            <ExStation TOPath="05,0518" NeedTime="2"></ExStation>
+        </station>
+        <station id="0210" IsExchangeSta="NO" PrivSta="0209" NextSta="0211" X="2481" Y="1963" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.90506165113501, 116.42717242240906" name="北京站"></station>
+        <station id="0211" IsExchangeSta="YE" PrivSta="0210" NextSta="0212" X="2497" Y="1858" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.90855501676913, 116.43584299832582" name="建国门">
+            <ExStation TOPath="01,0118" NeedTime="2"></ExStation>
+        </station>
+        <station id="0212" IsExchangeSta="YE" PrivSta="0211" NextSta="0213" X="2497" Y="1742" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.924592944019594, 116.43463801592588" name="朝阳门">
+            <ExStation TOPath="06,0611" NeedTime="2"></ExStation>
+        </station>
+        <station id="0213" IsExchangeSta="NO" PrivSta="0212" NextSta="0214" X="2497" Y="1655" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.933664044710554, 116.43421690911055" name="东四十条"></station>
+        <station id="0214" IsExchangeSta="YE" PrivSta="0213" NextSta="0215" X="2497" Y="1558" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.94113326375916, 116.43349170684814" name="东直门">
+            <ExStation TOPath="13,1316" NeedTime="2"></ExStation>
+            <ExStation TOPath="19,1901" NeedTime="2"></ExStation>
+        </station>
+        <station id="0215" IsExchangeSta="YE" PrivSta="0214" NextSta="0216" X="2342" Y="1505" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.949337025409484, 116.41698908060789" name="雍和宫">
+            <ExStation TOPath="05,0512" NeedTime="2"></ExStation>
+        </station>
+        <station id="0216" IsExchangeSta="NO" PrivSta="0215" NextSta="0217" X="2214" Y="1505" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.949177668560566, 116.40825748443604" name="安定门"></station>
+        <station id="0217" IsExchangeSta="YE" PrivSta="0216" NextSta="0218" X="2085" Y="1505" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.94797682565708, 116.39383792877197" name="鼓楼大街">
+            <ExStation TOPath="08,0812" NeedTime="2"></ExStation>
+        </station>
+        <station id="0218" IsExchangeSta="NO" PrivSta="0217" NextSta="9999" X="1863" Y="1505" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.94703916654227, 116.37675762176514" name="积水潭"></station>
+    </path>
 
-  <path name="四号线" id="04">
-    <station id="0401" IsExchangeSta="NO" PrivSta="0000" NextSta="0402" X="983" Y="997" ToPrivTime="3" ToNextTime="3" GPS="40.01275930398436, 116.26996278762817" name="安和桥北"></station>
-    <station id="0402" IsExchangeSta="NO" PrivSta="0401" NextSta="0403" X="1116" Y="997" ToPrivTime="3" ToNextTime="3" GPS="40.00299653747982, 116.280198097229" name="北宫门"></station>
-    <station id="0403" IsExchangeSta="NO" PrivSta="0402" NextSta="0404" X="1231" Y="997" ToPrivTime="3" ToNextTime="3" GPS="40.00076109484555, 116.28818035125732" name="西苑"></station>
-    <station id="0404" IsExchangeSta="NO" PrivSta="0403" NextSta="0405" X="1322" Y="1072" ToPrivTime="3" ToNextTime="3" GPS="39.99990634743762, 116.30315780639648" name="圆明园"></station>
-    <station id="0405" IsExchangeSta="NO" PrivSta="0404" NextSta="0406" X="1322" Y="1148" ToPrivTime="3" ToNextTime="3" GPS="39.993166618114195, 116.31723403930664" name="北京大学东门"></station>
-    <station id="0406" IsExchangeSta="NO" PrivSta="0405" NextSta="0407" X="1322" Y="1215" ToPrivTime="3" ToNextTime="3" GPS="39.98537400449909, 116.31916522979736" name="中关村"></station>
-    <station id="0407" IsExchangeSta="YE" PrivSta="0406" NextSta="0408" X="1322" Y="1308" ToPrivTime="3" ToNextTime="3" GPS="39.97669257813978, 116.32341384887695" name="海淀黄庄">
-      <ExStation TOPath="10,1003" NeedTime="2"></ExStation>
-    </station>
-    <station id="0408" IsExchangeSta="NO" PrivSta="0407" NextSta="0409" X="1322" Y="1406" ToPrivTime="3" ToNextTime="3" GPS="39.97050967787412, 116.32573127746582" name="人民大学"></station>
-    <station id="0409" IsExchangeSta="NO" PrivSta="0408" NextSta="0410" X="1322" Y="1492" ToPrivTime="3" ToNextTime="3" GPS="39.95962246760336, 116.32714748382568" name="魏公村"></station>
-    <station id="0410" IsExchangeSta="YE" PrivSta="0409" NextSta="0411" X="1372" Y="1559" ToPrivTime="3" ToNextTime="3" GPS="39.94340355968845, 116.32768392562866" name="国家图书馆">
-      <ExStation TOPath="09,0901" NeedTime="3"></ExStation>
-    </station>
-    <station id="0411" IsExchangeSta="NO" PrivSta="0410" NextSta="0412" X="1547" Y="1558" ToPrivTime="3" ToNextTime="3" GPS="39.939915827668344, 116.33545160293579" name="动物园"></station>
-    <station id="0412" IsExchangeSta="YE" PrivSta="0411" NextSta="0413" X="1712" Y="1558" ToPrivTime="3" ToNextTime="3" GPS="39.94075487378057, 116.35311126708984" name="西直门">
-      <ExStation TOPath="02,0201" NeedTime="3"></ExStation>
-      <ExStation TOPath="13,1301" NeedTime="3"></ExStation>
-    </station>
-    <station id="0413" IsExchangeSta="NO" PrivSta="0412" NextSta="0414" X="1842" Y="1558" ToPrivTime="3" ToNextTime="3" GPS="39.940870036169486, 116.36474132537842" name="新街口"></station>
-    <station id="0414" IsExchangeSta="YE" PrivSta="0413" NextSta="0415" X="1890" Y="1684" ToPrivTime="3" ToNextTime="3" GPS="39.93397640319203, 116.3730239868164" name="平安里">
-      <ExStation TOPath="06,0607" NeedTime="2"></ExStation>
-    </station>
-    <station id="0415" IsExchangeSta="NO" PrivSta="0414" NextSta="0416" X="1890" Y="1743" ToPrivTime="3" ToNextTime="3" GPS="39.92472896027251, 116.3758134841919" name="西四"></station>
-    <station id="0416" IsExchangeSta="NO" PrivSta="0415" NextSta="0417" X="1890" Y="1791" ToPrivTime="3" ToNextTime="3" GPS="39.91618795242394, 116.3746976852417" name="灵境胡同"></station>
-    <station id="0417" IsExchangeSta="YE" PrivSta="0416" NextSta="0418" X="1890" Y="1857" ToPrivTime="3" ToNextTime="3" GPS="39.90751420121553, 116.37497663497925" name="西单">
-      <ExStation TOPath="01,0113" NeedTime="2"></ExStation>
-    </station>
-    <station id="0418" IsExchangeSta="YE" PrivSta="0417" NextSta="0419" X="1890" Y="1971" ToPrivTime="3" ToNextTime="3" GPS="39.900008133557, 116.3768219947815" name="宣武门">
-      <ExStation TOPath="02,0206" NeedTime="2"></ExStation>
-    </station>
-    <station id="0419" IsExchangeSta="NO" PrivSta="0418" NextSta="0420" X="1890" Y="2023" ToPrivTime="3" ToNextTime="3" GPS="39.889488378939525, 116.37643575668335" name="菜市口"></station>
-    <station id="0420" IsExchangeSta="NO" PrivSta="0419" NextSta="0421" X="1890" Y="2074" ToPrivTime="3" ToNextTime="3" GPS="39.87876940987109, 116.377272605896" name="陶然亭"></station>
-    <station id="0421" IsExchangeSta="NO" PrivSta="0420" NextSta="0422" X="1890" Y="2123" ToPrivTime="3" ToNextTime="3" GPS="39.86556186307707, 116.37971878051758" name="北京南站"></station>
-    <station id="0422" IsExchangeSta="NO" PrivSta="0421" NextSta="0423" X="1890" Y="2172" ToPrivTime="3" ToNextTime="3" GPS="39.853949637515605, 116.37894630432129" name="马家堡"></station>
-    <station id="0423" IsExchangeSta="YE" PrivSta="0422" NextSta="0424" X="1890" Y="2227" ToPrivTime="3" ToNextTime="3" GPS="39.847459112268304, 116.37950420379639" name="角门西">
-      <ExStation TOPath="10,1031" NeedTime="2"></ExStation>
-    </station>
-    <station id="0424" IsExchangeSta="NO" PrivSta="0423" NextSta="0425" X="1890" Y="2296" ToPrivTime="3" ToNextTime="3" GPS="39.83625574698178, 116.37804508209229" name="公益西桥"></station>
-    <station id="0425" IsExchangeSta="NO" PrivSta="0424" NextSta="0426" X="1857" Y="2336" ToPrivTime="3" ToNextTime="3" GPS="39.81262383521031, 116.37422561645508" name="新宫"></station>
-    <station id="0426" IsExchangeSta="NO" PrivSta="0425" NextSta="0427" X="1825" Y="2371" ToPrivTime="3" ToNextTime="3" GPS="39.79000605786263, 116.33843421936035" name="西红门"></station>
-    <station id="0427" IsExchangeSta="NO" PrivSta="0426" NextSta="0428" X="1825" Y="2417" ToPrivTime="3" ToNextTime="3" GPS="39.773944899219, 116.34088039398193" name="高米店北"></station>
-    <station id="0428" IsExchangeSta="NO" PrivSta="0427" NextSta="0429" X="1825" Y="2465" ToPrivTime="3" ToNextTime="3" GPS="39.76414806087784, 116.34036540985107" name="高米店南"></station>
-    <station id="0429" IsExchangeSta="NO" PrivSta="0428" NextSta="0430" X="1825" Y="2509" ToPrivTime="3" ToNextTime="3" GPS="39.75401989737048, 116.34169578552246" name="枣园"></station>
-    <station id="0430" IsExchangeSta="NO" PrivSta="0429" NextSta="0431" X="1825" Y="2552" ToPrivTime="3" ToNextTime="3" GPS="39.74293329466467, 116.34212493896484" name="清源路"></station>
-    <station id="0431" IsExchangeSta="NO" PrivSta="0430" NextSta="0432" X="1825" Y="2600" ToPrivTime="3" ToNextTime="3" GPS="39.733033034710594, 116.34165287017822" name="黄村西大街"></station>
-    <station id="0432" IsExchangeSta="NO" PrivSta="0431" NextSta="0433" X="1825" Y="2648" ToPrivTime="3" ToNextTime="3" GPS="39.723626470522646, 116.34238243103027" name="黄村火车站"></station>
-    <station id="0433" IsExchangeSta="NO" PrivSta="0432" NextSta="0434" X="1825" Y="2697" ToPrivTime="3" ToNextTime="3" GPS="39.71210580705565, 116.3313102722168" name="义和庄"></station>
-    <station id="0434" IsExchangeSta="NO" PrivSta="0433" NextSta="0435" X="1825" Y="2745" ToPrivTime="3" ToNextTime="3" GPS="39.68757259859659, 116.33156776428223" name="生物医药基地"></station>
-    <station id="0435" IsExchangeSta="NO" PrivSta="0434" NextSta="9999" X="1825" Y="2794" ToPrivTime="3" ToNextTime="3" GPS="39.67119025961832, 116.3296365737915" name="天宫院"></station>
-  </path>
+    <path name="四号线" id="04">
+        <station id="0401" IsExchangeSta="NO" PrivSta="0000" NextSta="0402" X="983" Y="997" ToPrivTime="3"
+                 ToNextTime="3" GPS="40.01275930398436, 116.26996278762817" name="安和桥北"></station>
+        <station id="0402" IsExchangeSta="NO" PrivSta="0401" NextSta="0403" X="1116" Y="997" ToPrivTime="3"
+                 ToNextTime="3" GPS="40.00299653747982, 116.280198097229" name="北宫门"></station>
+        <station id="0403" IsExchangeSta="NO" PrivSta="0402" NextSta="0404" X="1231" Y="997" ToPrivTime="3"
+                 ToNextTime="3" GPS="40.00076109484555, 116.28818035125732" name="西苑"></station>
+        <station id="0404" IsExchangeSta="NO" PrivSta="0403" NextSta="0405" X="1322" Y="1072" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.99990634743762, 116.30315780639648" name="圆明园"></station>
+        <station id="0405" IsExchangeSta="NO" PrivSta="0404" NextSta="0406" X="1322" Y="1148" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.993166618114195, 116.31723403930664" name="北京大学东门"></station>
+        <station id="0406" IsExchangeSta="NO" PrivSta="0405" NextSta="0407" X="1322" Y="1215" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.98537400449909, 116.31916522979736" name="中关村"></station>
+        <station id="0407" IsExchangeSta="YE" PrivSta="0406" NextSta="0408" X="1322" Y="1308" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.97669257813978, 116.32341384887695" name="海淀黄庄">
+            <ExStation TOPath="10,1003" NeedTime="2"></ExStation>
+        </station>
+        <station id="0408" IsExchangeSta="NO" PrivSta="0407" NextSta="0409" X="1322" Y="1406" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.97050967787412, 116.32573127746582" name="人民大学"></station>
+        <station id="0409" IsExchangeSta="NO" PrivSta="0408" NextSta="0410" X="1322" Y="1492" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.95962246760336, 116.32714748382568" name="魏公村"></station>
+        <station id="0410" IsExchangeSta="YE" PrivSta="0409" NextSta="0411" X="1372" Y="1559" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.94340355968845, 116.32768392562866" name="国家图书馆">
+            <ExStation TOPath="09,0901" NeedTime="3"></ExStation>
+        </station>
+        <station id="0411" IsExchangeSta="NO" PrivSta="0410" NextSta="0412" X="1547" Y="1558" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.939915827668344, 116.33545160293579" name="动物园"></station>
+        <station id="0412" IsExchangeSta="YE" PrivSta="0411" NextSta="0413" X="1712" Y="1558" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.94075487378057, 116.35311126708984" name="西直门">
+            <ExStation TOPath="02,0201" NeedTime="3"></ExStation>
+            <ExStation TOPath="13,1301" NeedTime="3"></ExStation>
+        </station>
+        <station id="0413" IsExchangeSta="NO" PrivSta="0412" NextSta="0414" X="1842" Y="1558" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.940870036169486, 116.36474132537842" name="新街口"></station>
+        <station id="0414" IsExchangeSta="YE" PrivSta="0413" NextSta="0415" X="1890" Y="1684" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.93397640319203, 116.3730239868164" name="平安里">
+            <ExStation TOPath="06,0607" NeedTime="2"></ExStation>
+        </station>
+        <station id="0415" IsExchangeSta="NO" PrivSta="0414" NextSta="0416" X="1890" Y="1743" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.92472896027251, 116.3758134841919" name="西四"></station>
+        <station id="0416" IsExchangeSta="NO" PrivSta="0415" NextSta="0417" X="1890" Y="1791" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.91618795242394, 116.3746976852417" name="灵境胡同"></station>
+        <station id="0417" IsExchangeSta="YE" PrivSta="0416" NextSta="0418" X="1890" Y="1857" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.90751420121553, 116.37497663497925" name="西单">
+            <ExStation TOPath="01,0113" NeedTime="2"></ExStation>
+        </station>
+        <station id="0418" IsExchangeSta="YE" PrivSta="0417" NextSta="0419" X="1890" Y="1971" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.900008133557, 116.3768219947815" name="宣武门">
+            <ExStation TOPath="02,0206" NeedTime="2"></ExStation>
+        </station>
+        <station id="0419" IsExchangeSta="NO" PrivSta="0418" NextSta="0420" X="1890" Y="2023" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.889488378939525, 116.37643575668335" name="菜市口"></station>
+        <station id="0420" IsExchangeSta="NO" PrivSta="0419" NextSta="0421" X="1890" Y="2074" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.87876940987109, 116.377272605896" name="陶然亭"></station>
+        <station id="0421" IsExchangeSta="NO" PrivSta="0420" NextSta="0422" X="1890" Y="2123" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.86556186307707, 116.37971878051758" name="北京南站"></station>
+        <station id="0422" IsExchangeSta="NO" PrivSta="0421" NextSta="0423" X="1890" Y="2172" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.853949637515605, 116.37894630432129" name="马家堡"></station>
+        <station id="0423" IsExchangeSta="YE" PrivSta="0422" NextSta="0424" X="1890" Y="2227" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.847459112268304, 116.37950420379639" name="角门西">
+            <ExStation TOPath="10,1031" NeedTime="2"></ExStation>
+        </station>
+        <station id="0424" IsExchangeSta="NO" PrivSta="0423" NextSta="0425" X="1890" Y="2296" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.83625574698178, 116.37804508209229" name="公益西桥"></station>
+        <station id="0425" IsExchangeSta="NO" PrivSta="0424" NextSta="0426" X="1857" Y="2336" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.81262383521031, 116.37422561645508" name="新宫"></station>
+        <station id="0426" IsExchangeSta="NO" PrivSta="0425" NextSta="0427" X="1825" Y="2371" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.79000605786263, 116.33843421936035" name="西红门"></station>
+        <station id="0427" IsExchangeSta="NO" PrivSta="0426" NextSta="0428" X="1825" Y="2417" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.773944899219, 116.34088039398193" name="高米店北"></station>
+        <station id="0428" IsExchangeSta="NO" PrivSta="0427" NextSta="0429" X="1825" Y="2465" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.76414806087784, 116.34036540985107" name="高米店南"></station>
+        <station id="0429" IsExchangeSta="NO" PrivSta="0428" NextSta="0430" X="1825" Y="2509" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.75401989737048, 116.34169578552246" name="枣园"></station>
+        <station id="0430" IsExchangeSta="NO" PrivSta="0429" NextSta="0431" X="1825" Y="2552" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.74293329466467, 116.34212493896484" name="清源路"></station>
+        <station id="0431" IsExchangeSta="NO" PrivSta="0430" NextSta="0432" X="1825" Y="2600" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.733033034710594, 116.34165287017822" name="黄村西大街"></station>
+        <station id="0432" IsExchangeSta="NO" PrivSta="0431" NextSta="0433" X="1825" Y="2648" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.723626470522646, 116.34238243103027" name="黄村火车站"></station>
+        <station id="0433" IsExchangeSta="NO" PrivSta="0432" NextSta="0434" X="1825" Y="2697" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.71210580705565, 116.3313102722168" name="义和庄"></station>
+        <station id="0434" IsExchangeSta="NO" PrivSta="0433" NextSta="0435" X="1825" Y="2745" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.68757259859659, 116.33156776428223" name="生物医药基地"></station>
+        <station id="0435" IsExchangeSta="NO" PrivSta="0434" NextSta="9999" X="1825" Y="2794" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.67119025961832, 116.3296365737915" name="天宫院"></station>
+    </path>
 
-  <path name="五号线" id="05">
-    <station id="0501" IsExchangeSta="NO" PrivSta="0000" NextSta="0502" X="2341" Y="713" ToPrivTime="3" ToNextTime="3" GPS="40.083390885329855, 116.41299962997436" name="天通苑北"/>
-    <station id="0502" IsExchangeSta="NO" PrivSta="0501" NextSta="0503" X="2341" Y="787" ToPrivTime="3" ToNextTime="3" GPS="40.07686797585886, 116.4341451600194" name="天通苑"/>
-    <station id="0503" IsExchangeSta="NO" PrivSta="0502" NextSta="0504" X="2341" Y="871" ToPrivTime="3" ToNextTime="3" GPS="40.066369004693705, 116.4129439741373" name="天通苑南"/>
-    <station id="0504" IsExchangeSta="YE" PrivSta="0503" NextSta="0505" X="2341" Y="947" ToPrivTime="3" ToNextTime="3" GPS="40.053055991175384, 116.4123659580946" name="立水桥">
-      <ExStation TOPath="13,1310" NeedTime="3"></ExStation>
-    </station>
-    <station id="0505" IsExchangeSta="NO" PrivSta="0504" NextSta="0506" X="2341" Y="1014" ToPrivTime="3" ToNextTime="3" GPS="40.04187495125508, 116.4145016670227" name="立水桥南"/>
-    <station id="0506" IsExchangeSta="NO" PrivSta="0505" NextSta="0507" X="2341" Y="1083" ToPrivTime="3" ToNextTime="3" GPS="40.030588362118706, 116.4180850982666" name="北苑路北"/>
-    <station id="0507" IsExchangeSta="NO" PrivSta="0506" NextSta="0508" X="2341" Y="1172" ToPrivTime="3" ToNextTime="3" GPS="40.003843027901695, 116.41739409416914" name="大屯路东"/>
-    <station id="0508" IsExchangeSta="NO" PrivSta="0507" NextSta="0509" X="2341" Y="1237" ToPrivTime="3" ToNextTime="3" GPS="39.987821108332454, 116.41704607754946" name="惠新西街北口"/>
-    <station id="0509" IsExchangeSta="YE" PrivSta="0508" NextSta="0510" X="2341" Y="1310" ToPrivTime="3" ToNextTime="3" GPS="39.977120098439634, 116.41759157180786" name="惠新西街南口">
-      <ExStation TOPath="10,1011" NeedTime="4"></ExStation>
-    </station>
-    <station id="0510" IsExchangeSta="NO" PrivSta="0509" NextSta="0511" X="2341" Y="1394" ToPrivTime="3" ToNextTime="3" GPS="39.968552739192795, 116.417977809906" name="和平西桥"/>
-    <station id="0511" IsExchangeSta="NO" PrivSta="0510" NextSta="0512" X="2341" Y="1451" ToPrivTime="3" ToNextTime="3" GPS="39.959342863842416, 116.4182996749878" name="和平里北街"/>
-    <station id="0512" IsExchangeSta="YE" PrivSta="0511" NextSta="0513" X="2341" Y="1508" ToPrivTime="3" ToNextTime="3" GPS="39.94774601054331, 116.41723684966564" name="雍和宫">
-      <ExStation TOPath="02,0215" NeedTime="3"></ExStation>
-    </station>
-    <station id="0513" IsExchangeSta="NO" PrivSta="0512" NextSta="0514" X="2341" Y="1586" ToPrivTime="3" ToNextTime="3" GPS="39.94100396361462, 116.41680099070072" name="北新桥"/>
-    <station id="0514" IsExchangeSta="NO" PrivSta="0513" NextSta="0515" X="2341" Y="1644" ToPrivTime="3" ToNextTime="3" GPS="39.93368024111129, 116.41701221466064" name="张自忠路"/>
-    <station id="0515" IsExchangeSta="YE" PrivSta="0514" NextSta="0516" X="2341" Y="1744" ToPrivTime="3" ToNextTime="3" GPS="39.92441295990471, 116.41711413860321" name="东四">
-      <ExStation TOPath="06,0610" NeedTime="8"></ExStation>
-    </station>
-    <station id="0516" IsExchangeSta="NO" PrivSta="0515" NextSta="0517" X="2341" Y="1799" ToPrivTime="3" ToNextTime="3" GPS="39.917290608699524, 116.41772031784057" name="灯市口"/>
-    <station id="0517" IsExchangeSta="YE" PrivSta="0516" NextSta="0518" X="2341" Y="1860" ToPrivTime="3" ToNextTime="3" GPS="39.90838656363176, 116.41988754272461" name="东单">
-      <ExStation TOPath="01,0117" NeedTime="3"></ExStation>
-    </station>
-    <station id="0518" IsExchangeSta="YE" PrivSta="0517" NextSta="0519" X="2341" Y="1975" ToPrivTime="3" ToNextTime="3" GPS="39.90078182327698, 116.41765594482422" name="崇文门">
-      <ExStation TOPath="02,0209" NeedTime="5"></ExStation>
-    </station>
-    <station id="0519" IsExchangeSta="NO" PrivSta="0518" NextSta="0520" X="2341" Y="2029" ToPrivTime="3" ToNextTime="3" GPS="39.89315102954275, 116.41884583979845" name="磁器口"/>
-    <station id="0520" IsExchangeSta="NO" PrivSta="0519" NextSta="0521" X="2341" Y="2074" ToPrivTime="3" ToNextTime="3" GPS="39.88306501977177, 116.42082698643207" name="天坛东门"/>
-    <station id="0521" IsExchangeSta="NO" PrivSta="0520" NextSta="0522" X="2341" Y="2124" ToPrivTime="3" ToNextTime="3" GPS="39.865684872146254, 116.4216611534357" name="蒲黄榆"/>
-    <station id="0522" IsExchangeSta="NO" PrivSta="0521" NextSta="0523" X="2341" Y="2173" ToPrivTime="3" ToNextTime="3" GPS="39.85763940869116, 116.422119140625" name="刘家窑"/>
-    <station id="0523" IsExchangeSta="YE" PrivSta="0522" NextSta="9999" X="2341" Y="2229" ToPrivTime="3" ToNextTime="3" GPS="39.84584462235867, 116.42836332321167" name="宋家庄">
-      <ExStation TOPath="10,1027" NeedTime="3"></ExStation>
-      <ExStation TOPath="17,1713" NeedTime="3"></ExStation>
-    </station>
-  </path>
+    <path name="五号线" id="05">
+        <station id="0501" IsExchangeSta="NO" PrivSta="0000" NextSta="0502" X="2341" Y="713" ToPrivTime="3"
+                 ToNextTime="3" GPS="40.083390885329855, 116.41299962997436" name="天通苑北"/>
+        <station id="0502" IsExchangeSta="NO" PrivSta="0501" NextSta="0503" X="2341" Y="787" ToPrivTime="3"
+                 ToNextTime="3" GPS="40.07686797585886, 116.4341451600194" name="天通苑"/>
+        <station id="0503" IsExchangeSta="NO" PrivSta="0502" NextSta="0504" X="2341" Y="871" ToPrivTime="3"
+                 ToNextTime="3" GPS="40.066369004693705, 116.4129439741373" name="天通苑南"/>
+        <station id="0504" IsExchangeSta="YE" PrivSta="0503" NextSta="0505" X="2341" Y="947" ToPrivTime="3"
+                 ToNextTime="3" GPS="40.053055991175384, 116.4123659580946" name="立水桥">
+            <ExStation TOPath="13,1310" NeedTime="3"></ExStation>
+        </station>
+        <station id="0505" IsExchangeSta="NO" PrivSta="0504" NextSta="0506" X="2341" Y="1014" ToPrivTime="3"
+                 ToNextTime="3" GPS="40.04187495125508, 116.4145016670227" name="立水桥南"/>
+        <station id="0506" IsExchangeSta="NO" PrivSta="0505" NextSta="0507" X="2341" Y="1083" ToPrivTime="3"
+                 ToNextTime="3" GPS="40.030588362118706, 116.4180850982666" name="北苑路北"/>
+        <station id="0507" IsExchangeSta="NO" PrivSta="0506" NextSta="0508" X="2341" Y="1172" ToPrivTime="3"
+                 ToNextTime="3" GPS="40.003843027901695, 116.41739409416914" name="大屯路东"/>
+        <station id="0508" IsExchangeSta="NO" PrivSta="0507" NextSta="0509" X="2341" Y="1237" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.987821108332454, 116.41704607754946" name="惠新西街北口"/>
+        <station id="0509" IsExchangeSta="YE" PrivSta="0508" NextSta="0510" X="2341" Y="1310" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.977120098439634, 116.41759157180786" name="惠新西街南口">
+            <ExStation TOPath="10,1011" NeedTime="4"></ExStation>
+        </station>
+        <station id="0510" IsExchangeSta="NO" PrivSta="0509" NextSta="0511" X="2341" Y="1394" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.968552739192795, 116.417977809906" name="和平西桥"/>
+        <station id="0511" IsExchangeSta="NO" PrivSta="0510" NextSta="0512" X="2341" Y="1451" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.959342863842416, 116.4182996749878" name="和平里北街"/>
+        <station id="0512" IsExchangeSta="YE" PrivSta="0511" NextSta="0513" X="2341" Y="1508" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.94774601054331, 116.41723684966564" name="雍和宫">
+            <ExStation TOPath="02,0215" NeedTime="3"></ExStation>
+        </station>
+        <station id="0513" IsExchangeSta="NO" PrivSta="0512" NextSta="0514" X="2341" Y="1586" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.94100396361462, 116.41680099070072" name="北新桥"/>
+        <station id="0514" IsExchangeSta="NO" PrivSta="0513" NextSta="0515" X="2341" Y="1644" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.93368024111129, 116.41701221466064" name="张自忠路"/>
+        <station id="0515" IsExchangeSta="YE" PrivSta="0514" NextSta="0516" X="2341" Y="1744" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.92441295990471, 116.41711413860321" name="东四">
+            <ExStation TOPath="06,0610" NeedTime="8"></ExStation>
+        </station>
+        <station id="0516" IsExchangeSta="NO" PrivSta="0515" NextSta="0517" X="2341" Y="1799" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.917290608699524, 116.41772031784057" name="灯市口"/>
+        <station id="0517" IsExchangeSta="YE" PrivSta="0516" NextSta="0518" X="2341" Y="1860" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.90838656363176, 116.41988754272461" name="东单">
+            <ExStation TOPath="01,0117" NeedTime="3"></ExStation>
+        </station>
+        <station id="0518" IsExchangeSta="YE" PrivSta="0517" NextSta="0519" X="2341" Y="1975" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.90078182327698, 116.41765594482422" name="崇文门">
+            <ExStation TOPath="02,0209" NeedTime="5"></ExStation>
+        </station>
+        <station id="0519" IsExchangeSta="NO" PrivSta="0518" NextSta="0520" X="2341" Y="2029" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.89315102954275, 116.41884583979845" name="磁器口"/>
+        <station id="0520" IsExchangeSta="NO" PrivSta="0519" NextSta="0521" X="2341" Y="2074" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.88306501977177, 116.42082698643207" name="天坛东门"/>
+        <station id="0521" IsExchangeSta="NO" PrivSta="0520" NextSta="0522" X="2341" Y="2124" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.865684872146254, 116.4216611534357" name="蒲黄榆"/>
+        <station id="0522" IsExchangeSta="NO" PrivSta="0521" NextSta="0523" X="2341" Y="2173" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.85763940869116, 116.422119140625" name="刘家窑"/>
+        <station id="0523" IsExchangeSta="YE" PrivSta="0522" NextSta="9999" X="2341" Y="2229" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.84584462235867, 116.42836332321167" name="宋家庄">
+            <ExStation TOPath="10,1027" NeedTime="3"></ExStation>
+            <ExStation TOPath="17,1713" NeedTime="3"></ExStation>
+        </station>
+    </path>
 
-  <path name="六号线" id="06">
-    <station id="0601" IsExchangeSta="NO" PrivSta="0000" NextSta="0602" X="1051" Y="1684" ToPrivTime="3" ToNextTime="3" GPS="39.93254494126312, 116.27685070037842" name="海淀五路居"></station>
-    <station id="0602" IsExchangeSta="YE" PrivSta="0601" NextSta="0603" X="1154" Y="1684" ToPrivTime="3" ToNextTime="3" GPS="39.932989191272476, 116.29305124282837" name="慈寿寺">
-      <ExStation TOPath="10,1042" NeedTime="2"></ExStation>
-    </station>
-    <station id="0603" IsExchangeSta="NO" PrivSta="0602" NextSta="0604" X="1258" Y="1684" ToPrivTime="3" ToNextTime="3" GPS="39.93269302491995, 116.3096809387207" name="花园桥"></station>
-    <station id="0604" IsExchangeSta="YE" PrivSta="0603" NextSta="0605" X="1372" Y="1684" ToPrivTime="3" ToNextTime="3" GPS="39.93302209856587, 116.32551670074463" name="白石桥南">
-      <ExStation TOPath="09,0902" NeedTime="2"></ExStation>
-    </station>
-    <station id="0605" IsExchangeSta="NO" PrivSta="0604" NextSta="0606" X="1536" Y="1684" ToPrivTime="3" ToNextTime="3" GPS="39.93244621864724, 116.34401321411133" name="车公庄西"></station>
-    <station id="0606" IsExchangeSta="YE" PrivSta="0605" NextSta="0607" X="1712" Y="1684" ToPrivTime="3" ToNextTime="3" GPS="39.93244621864724, 116.34401321411133" name="车公庄">
-      <ExStation TOPath="02,0202" NeedTime="2"></ExStation>
-    </station>
-    <station id="0607" IsExchangeSta="YE" PrivSta="0606" NextSta="0608" X="1890" Y="1684" ToPrivTime="3" ToNextTime="3" GPS="39.93378795993305, 116.3730139285326" name="平安里">
-      <ExStation TOPath="04,0414" NeedTime="2"></ExStation>
-    </station>
-    <station id="0608" IsExchangeSta="NO" PrivSta="0607" NextSta="0609" X="2001" Y="1684" ToPrivTime="3" ToNextTime="3" GPS="39.93326890276203, 116.38673543930054" name="北海北"></station>
-    <station id="0609" IsExchangeSta="NO" PrivSta="0608" NextSta="0610" X="2087" Y="1684" ToPrivTime="3" ToNextTime="3" GPS="39.9333676241913, 116.40289306640625" name="南锣鼓巷"></station>
-    <station id="0610" IsExchangeSta="YE" PrivSta="0609" NextSta="0611" X="2343" Y="1741" ToPrivTime="3" ToNextTime="3" GPS="39.92441630247115, 116.41714096069336" name="东四">
-      <ExStation TOPath="05,0515" NeedTime="2"></ExStation>
-    </station>
-    <station id="0611" IsExchangeSta="YE" PrivSta="0610" NextSta="0612" X="2497" Y="1741" ToPrivTime="3" ToNextTime="3" GPS="39.92505807220514, 116.43471479415894" name="朝阳门">
-      <ExStation TOPath="02,0212" NeedTime="2"></ExStation>
-    </station>
-    <station id="0612" IsExchangeSta="NO" PrivSta="0611" NextSta="0613" X="2602" Y="1741" ToPrivTime="3" ToNextTime="3" GPS="39.923066920845024, 116.4517092704773" name="东大桥" />
-    <station id="0613" IsExchangeSta="YE" PrivSta="0612" NextSta="0614" X="2720" Y="1742" ToPrivTime="3" ToNextTime="3" GPS="39.92341249672154, 116.46175146102905" name="呼家楼">
-      <ExStation TOPath="10,1018" NeedTime="2"></ExStation>
-    </station>
-    <station id="0614" IsExchangeSta="NO" PrivSta="0613" NextSta="0615" X="2839" Y="1741" ToPrivTime="3" ToNextTime="3" GPS="39.92290236029078, 116.47814512252808" name="金台路"></station>
-    <station id="0615" IsExchangeSta="NO" PrivSta="0614" NextSta="0616" X="2934" Y="1741" ToPrivTime="3" ToNextTime="3" GPS="39.92307309185811, 116.50189407169819" name="十里堡"></station>
-    <station id="0616" IsExchangeSta="NO" PrivSta="0615" NextSta="0617" X="3028" Y="1741" ToPrivTime="3" ToNextTime="3" GPS="39.92316565698772, 116.51756286621094" name="青年路"></station>
-    <station id="0617" IsExchangeSta="NO" PrivSta="0616" NextSta="0618" X="3122" Y="1741" ToPrivTime="3" ToNextTime="3" GPS="39.92402290699199, 116.56342897564173" name="褡裢坡"></station>
-    <station id="0618" IsExchangeSta="NO" PrivSta="0617" NextSta="0619" X="3217" Y="1741" ToPrivTime="3" ToNextTime="3" GPS="39.92403782006444, 116.57307386398315" name="黄渠"></station>
-    <station id="0619" IsExchangeSta="NO" PrivSta="0618" NextSta="0620" X="3312" Y="1741" ToPrivTime="3" ToNextTime="3" GPS="39.925666925109766, 116.59961700439453" name="常营"></station>
-    <station id="0620" IsExchangeSta="NO" PrivSta="0619" NextSta="9999" X="3406" Y="1741" ToPrivTime="3" ToNextTime="3" GPS="39.92444921388591, 116.61547422409058" name="草房"></station>
-  </path>
+    <path name="六号线" id="06">
+        <station id="0601" IsExchangeSta="NO" PrivSta="0000" NextSta="0602" X="1051" Y="1684" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.93254494126312, 116.27685070037842" name="海淀五路居"></station>
+        <station id="0602" IsExchangeSta="YE" PrivSta="0601" NextSta="0603" X="1154" Y="1684" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.932989191272476, 116.29305124282837" name="慈寿寺">
+            <ExStation TOPath="10,1042" NeedTime="2"></ExStation>
+        </station>
+        <station id="0603" IsExchangeSta="NO" PrivSta="0602" NextSta="0604" X="1258" Y="1684" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.93269302491995, 116.3096809387207" name="花园桥"></station>
+        <station id="0604" IsExchangeSta="YE" PrivSta="0603" NextSta="0605" X="1372" Y="1684" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.93302209856587, 116.32551670074463" name="白石桥南">
+            <ExStation TOPath="09,0902" NeedTime="2"></ExStation>
+        </station>
+        <station id="0605" IsExchangeSta="NO" PrivSta="0604" NextSta="0606" X="1536" Y="1684" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.93244621864724, 116.34401321411133" name="车公庄西"></station>
+        <station id="0606" IsExchangeSta="YE" PrivSta="0605" NextSta="0607" X="1712" Y="1684" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.93244621864724, 116.34401321411133" name="车公庄">
+            <ExStation TOPath="02,0202" NeedTime="2"></ExStation>
+        </station>
+        <station id="0607" IsExchangeSta="YE" PrivSta="0606" NextSta="0608" X="1890" Y="1684" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.93378795993305, 116.3730139285326" name="平安里">
+            <ExStation TOPath="04,0414" NeedTime="2"></ExStation>
+        </station>
+        <station id="0608" IsExchangeSta="NO" PrivSta="0607" NextSta="0609" X="2001" Y="1684" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.93326890276203, 116.38673543930054" name="北海北"></station>
+        <station id="0609" IsExchangeSta="NO" PrivSta="0608" NextSta="0610" X="2087" Y="1684" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.9333676241913, 116.40289306640625" name="南锣鼓巷"></station>
+        <station id="0610" IsExchangeSta="YE" PrivSta="0609" NextSta="0611" X="2343" Y="1741" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.92441630247115, 116.41714096069336" name="东四">
+            <ExStation TOPath="05,0515" NeedTime="2"></ExStation>
+        </station>
+        <station id="0611" IsExchangeSta="YE" PrivSta="0610" NextSta="0612" X="2497" Y="1741" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.92505807220514, 116.43471479415894" name="朝阳门">
+            <ExStation TOPath="02,0212" NeedTime="2"></ExStation>
+        </station>
+        <station id="0612" IsExchangeSta="NO" PrivSta="0611" NextSta="0613" X="2602" Y="1741" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.923066920845024, 116.4517092704773" name="东大桥"/>
+        <station id="0613" IsExchangeSta="YE" PrivSta="0612" NextSta="0614" X="2720" Y="1742" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.92341249672154, 116.46175146102905" name="呼家楼">
+            <ExStation TOPath="10,1018" NeedTime="2"></ExStation>
+        </station>
+        <station id="0614" IsExchangeSta="NO" PrivSta="0613" NextSta="0615" X="2839" Y="1741" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.92290236029078, 116.47814512252808" name="金台路"></station>
+        <station id="0615" IsExchangeSta="NO" PrivSta="0614" NextSta="0616" X="2934" Y="1741" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.92307309185811, 116.50189407169819" name="十里堡"></station>
+        <station id="0616" IsExchangeSta="NO" PrivSta="0615" NextSta="0617" X="3028" Y="1741" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.92316565698772, 116.51756286621094" name="青年路"></station>
+        <station id="0617" IsExchangeSta="NO" PrivSta="0616" NextSta="0618" X="3122" Y="1741" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.92402290699199, 116.56342897564173" name="褡裢坡"></station>
+        <station id="0618" IsExchangeSta="NO" PrivSta="0617" NextSta="0619" X="3217" Y="1741" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.92403782006444, 116.57307386398315" name="黄渠"></station>
+        <station id="0619" IsExchangeSta="NO" PrivSta="0618" NextSta="0620" X="3312" Y="1741" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.925666925109766, 116.59961700439453" name="常营"></station>
+        <station id="0620" IsExchangeSta="NO" PrivSta="0619" NextSta="9999" X="3406" Y="1741" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.92444921388591, 116.61547422409058" name="草房"></station>
+    </path>
 
-  <path name="八号线" id="08">
-    <station id="0801" IsExchangeSta="NO" PrivSta="0000" NextSta="0802" X="2005" Y="841" ToPrivTime="3" ToNextTime="3" GPS="40.081043151142175, 116.36330366134644" name="回龙观东大街"></station>
-    <station id="0802" IsExchangeSta="YE" PrivSta="0801" NextSta="0803" X="2005" Y="945" ToPrivTime="3" ToNextTime="3" GPS="40.071832027560035, 116.36040687561035" name="霍营">
-      <ExStation TOPath="13,1309" NeedTime="2"></ExStation>
-    </station>
-    <station id="0803" IsExchangeSta="NO" PrivSta="0802" NextSta="0804" X="2005" Y="993" ToPrivTime="3" ToNextTime="3" GPS="40.05984420812549, 116.34740352630615" name="育新"></station>
-    <station id="0804" IsExchangeSta="NO" PrivSta="0803" NextSta="0805" X="2005" Y="1035" ToPrivTime="3" ToNextTime="3" GPS="40.04747648008442, 116.35139465332031" name="西小口"></station>
-    <station id="0805" IsExchangeSta="NO" PrivSta="0804" NextSta="0806" X="2005" Y="1078" ToPrivTime="3" ToNextTime="3" GPS="40.037570824660925, 116.35465621948242" name="永泰庄"></station>
-    <station id="0806" IsExchangeSta="NO" PrivSta="0805" NextSta="0807" X="2048" Y="1104" ToPrivTime="3" ToNextTime="3" GPS="40.021731928477855, 116.37244462966919" name="林萃桥"></station>
-    <station id="0807" IsExchangeSta="NO" PrivSta="0806" NextSta="0808" X="2085" Y="1130" ToPrivTime="3" ToNextTime="3" GPS="40.01001469422373, 116.39289379119873" name="森林公园南门"></station>
-    <station id="0808" IsExchangeSta="NO" PrivSta="0807" NextSta="0809" X="2085" Y="1171" ToPrivTime="3" ToNextTime="3" GPS="40.000267972646796, 116.39332294464111" name="奥林匹克公园"></station>
-    <station id="0809" IsExchangeSta="NO" PrivSta="0808" NextSta="0810" X="2085" Y="1231" ToPrivTime="3" ToNextTime="3" GPS="39.985538414809746, 116.39396667480469" name="奥体中心"></station>
-    <station id="0810" IsExchangeSta="YE" PrivSta="0809" NextSta="0811" X="2085" Y="1309" ToPrivTime="3" ToNextTime="3" GPS="39.97693922479302, 116.39424562454224" name="北土城">
-      <ExStation TOPath="10,1009" NeedTime="2"></ExStation>
-    </station>
-    <station id="0811" IsExchangeSta="NO" PrivSta="0810" NextSta="0812" X="2085" Y="1377" ToPrivTime="3" ToNextTime="3" GPS="39.96925987476063, 116.39461040496826" name="安华桥" />
-    <station id="0812" IsExchangeSta="NO" PrivSta="0811" NextSta="0813" X="2087" Y="1429" ToPrivTime="3" ToNextTime="3" GPS="39.95958957310258, 116.3949966430664" name="安德里北街" />
-    <station id="0813" IsExchangeSta="YE" PrivSta="0812" NextSta="9999" X="2085" Y="1505" ToPrivTime="3" ToNextTime="3" GPS="39.94797682565708, 116.39383792877197" name="鼓楼大街">
-      <ExStation TOPath="02,0217" NeedTime="2"></ExStation>
-    </station>
-  </path>
+    <path name="八号线" id="08">
+        <station id="0801" IsExchangeSta="NO" PrivSta="0000" NextSta="0802" X="2005" Y="841" ToPrivTime="3"
+                 ToNextTime="3" GPS="40.081043151142175, 116.36330366134644" name="回龙观东大街"></station>
+        <station id="0802" IsExchangeSta="YE" PrivSta="0801" NextSta="0803" X="2005" Y="945" ToPrivTime="3"
+                 ToNextTime="3" GPS="40.071832027560035, 116.36040687561035" name="霍营">
+            <ExStation TOPath="13,1309" NeedTime="2"></ExStation>
+        </station>
+        <station id="0803" IsExchangeSta="NO" PrivSta="0802" NextSta="0804" X="2005" Y="993" ToPrivTime="3"
+                 ToNextTime="3" GPS="40.05984420812549, 116.34740352630615" name="育新"></station>
+        <station id="0804" IsExchangeSta="NO" PrivSta="0803" NextSta="0805" X="2005" Y="1035" ToPrivTime="3"
+                 ToNextTime="3" GPS="40.04747648008442, 116.35139465332031" name="西小口"></station>
+        <station id="0805" IsExchangeSta="NO" PrivSta="0804" NextSta="0806" X="2005" Y="1078" ToPrivTime="3"
+                 ToNextTime="3" GPS="40.037570824660925, 116.35465621948242" name="永泰庄"></station>
+        <station id="0806" IsExchangeSta="NO" PrivSta="0805" NextSta="0807" X="2048" Y="1104" ToPrivTime="3"
+                 ToNextTime="3" GPS="40.021731928477855, 116.37244462966919" name="林萃桥"></station>
+        <station id="0807" IsExchangeSta="NO" PrivSta="0806" NextSta="0808" X="2085" Y="1130" ToPrivTime="3"
+                 ToNextTime="3" GPS="40.01001469422373, 116.39289379119873" name="森林公园南门"></station>
+        <station id="0808" IsExchangeSta="NO" PrivSta="0807" NextSta="0809" X="2085" Y="1171" ToPrivTime="3"
+                 ToNextTime="3" GPS="40.000267972646796, 116.39332294464111" name="奥林匹克公园"></station>
+        <station id="0809" IsExchangeSta="NO" PrivSta="0808" NextSta="0810" X="2085" Y="1231" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.985538414809746, 116.39396667480469" name="奥体中心"></station>
+        <station id="0810" IsExchangeSta="YE" PrivSta="0809" NextSta="0811" X="2085" Y="1309" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.97693922479302, 116.39424562454224" name="北土城">
+            <ExStation TOPath="10,1009" NeedTime="2"></ExStation>
+        </station>
+        <station id="0811" IsExchangeSta="NO" PrivSta="0810" NextSta="0812" X="2085" Y="1377" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.96925987476063, 116.39461040496826" name="安华桥"/>
+        <station id="0812" IsExchangeSta="NO" PrivSta="0811" NextSta="0813" X="2087" Y="1429" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.95958957310258, 116.3949966430664" name="安德里北街"/>
+        <station id="0813" IsExchangeSta="YE" PrivSta="0812" NextSta="9999" X="2085" Y="1505" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.94797682565708, 116.39383792877197" name="鼓楼大街">
+            <ExStation TOPath="02,0217" NeedTime="2"></ExStation>
+        </station>
+    </path>
 
-  <path name="九号线" id="09">
-    <station id="0901" IsExchangeSta="YE" PrivSta="0000" NextSta="0902" X="1372" Y="1559" ToPrivTime="3" ToNextTime="3" GPS="39.94409450436698, 116.3251519203186" name="国家图书馆">
-      <ExStation TOPath="04,0410" NeedTime="3"></ExStation>
-    </station>
-    <station id="0902" IsExchangeSta="YE" PrivSta="0901" NextSta="0903" X="1372" Y="1683" ToPrivTime="3" ToNextTime="3" GPS="39.933120820351135, 116.32707238197327" name="白石桥南">
-      <ExStation TOPath="06,0604" NeedTime="3"></ExStation>
-    </station>
-    <station id="0903" IsExchangeSta="NO" PrivSta="0902" NextSta="0904" X="1372" Y="1772" ToPrivTime="3" ToNextTime="3" GPS="39.924194150007786, 116.32743716239929" name="白堆子">
-    </station>
-    <station id="0904" IsExchangeSta="NO" PrivSta="0903" NextSta="0905" X="1372" Y="1857" ToPrivTime="3" ToNextTime="3" GPS="39.90797507331015, 116.328284740448" name="军事博物馆">
-    </station>
-    <station id="0905" IsExchangeSta="NO" PrivSta="0904" NextSta="0906" X="1373" Y="1935" ToPrivTime="3" ToNextTime="3" GPS="39.89571152744179, 116.32485151290894" name="北京西站">
-    </station>
-    <station id="0906" IsExchangeSta="NO" PrivSta="0905" NextSta="0907" X="1339" Y="1983" ToPrivTime="3" ToNextTime="3" GPS="39.887199830395986, 116.32015228271484" name="六里桥东">
-    </station>
-    <station id="0907" IsExchangeSta="YE" PrivSta="0906" NextSta="0908" X="1278" Y="2021" ToPrivTime="3" ToNextTime="3" GPS="39.88054778796274, 116.30287885665894" name="六里桥">
-      <ExStation TOPath="10,1038" NeedTime="3"/>
-    </station>
-    <station id="0908" IsExchangeSta="NO" PrivSta="0907" NextSta="0909" X="1188" Y="2086" ToPrivTime="3" ToNextTime="3" GPS="39.86775231793245, 116.29873752593994" name="七里庄">
-    </station>
-    <station id="0909" IsExchangeSta="NO" PrivSta="0908" NextSta="0910" X="1187" Y="2139" ToPrivTime="3" ToNextTime="3" GPS="39.85562982577406, 116.30350112915039" name="丰台东大街">
-    </station>
-    <station id="0910" IsExchangeSta="NO" PrivSta="0909" NextSta="0911" X="1187" Y="2191" ToPrivTime="3" ToNextTime="3" GPS="39.841824707030185, 116.30697727203369" name="丰台南路">
-    </station>
-    <station id="0911" IsExchangeSta="NO" PrivSta="0910" NextSta="0912" X="1187" Y="2244" ToPrivTime="3" ToNextTime="3" GPS="39.83404780940991, 116.30547523498535" name="柯怡路">
-    </station>
-    <station id="0912" IsExchangeSta="NO" PrivSta="0911" NextSta="0913" X="1187" Y="2297" ToPrivTime="3" ToNextTime="3" GPS="39.826929199055, 116.30573272705078" name="丰台科技园">
-    </station>
-    <station id="0913" IsExchangeSta="YE" PrivSta="0912" NextSta="9999" X="1186" Y="2355" ToPrivTime="3" ToNextTime="3" GPS="39.81470060504677, 116.30487442016602" name="郭公庄">
-      <ExStation TOPath="18,1811" NeedTime="2"></ExStation>
-    </station>
-  </path>
+    <path name="九号线" id="09">
+        <station id="0901" IsExchangeSta="YE" PrivSta="0000" NextSta="0902" X="1372" Y="1559" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.94409450436698, 116.3251519203186" name="国家图书馆">
+            <ExStation TOPath="04,0410" NeedTime="3"></ExStation>
+        </station>
+        <station id="0902" IsExchangeSta="YE" PrivSta="0901" NextSta="0903" X="1372" Y="1683" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.933120820351135, 116.32707238197327" name="白石桥南">
+            <ExStation TOPath="06,0604" NeedTime="3"></ExStation>
+        </station>
+        <station id="0903" IsExchangeSta="NO" PrivSta="0902" NextSta="0904" X="1372" Y="1772" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.924194150007786, 116.32743716239929" name="白堆子">
+        </station>
+        <station id="0904" IsExchangeSta="NO" PrivSta="0903" NextSta="0905" X="1372" Y="1857" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.90797507331015, 116.328284740448" name="军事博物馆">
+        </station>
+        <station id="0905" IsExchangeSta="NO" PrivSta="0904" NextSta="0906" X="1373" Y="1935" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.89571152744179, 116.32485151290894" name="北京西站">
+        </station>
+        <station id="0906" IsExchangeSta="NO" PrivSta="0905" NextSta="0907" X="1339" Y="1983" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.887199830395986, 116.32015228271484" name="六里桥东">
+        </station>
+        <station id="0907" IsExchangeSta="YE" PrivSta="0906" NextSta="0908" X="1278" Y="2021" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.88054778796274, 116.30287885665894" name="六里桥">
+            <ExStation TOPath="10,1038" NeedTime="3"/>
+        </station>
+        <station id="0908" IsExchangeSta="NO" PrivSta="0907" NextSta="0909" X="1188" Y="2086" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.86775231793245, 116.29873752593994" name="七里庄">
+        </station>
+        <station id="0909" IsExchangeSta="NO" PrivSta="0908" NextSta="0910" X="1187" Y="2139" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.85562982577406, 116.30350112915039" name="丰台东大街">
+        </station>
+        <station id="0910" IsExchangeSta="NO" PrivSta="0909" NextSta="0911" X="1187" Y="2191" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.841824707030185, 116.30697727203369" name="丰台南路">
+        </station>
+        <station id="0911" IsExchangeSta="NO" PrivSta="0910" NextSta="0912" X="1187" Y="2244" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.83404780940991, 116.30547523498535" name="柯怡路">
+        </station>
+        <station id="0912" IsExchangeSta="NO" PrivSta="0911" NextSta="0913" X="1187" Y="2297" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.826929199055, 116.30573272705078" name="丰台科技园">
+        </station>
+        <station id="0913" IsExchangeSta="YE" PrivSta="0912" NextSta="9999" X="1186" Y="2355" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.81470060504677, 116.30487442016602" name="郭公庄">
+            <ExStation TOPath="18,1811" NeedTime="2"></ExStation>
+        </station>
+    </path>
 
-  <path name="十号线" id="10">
-    <station id="1001" IsExchangeSta="NO" PrivSta="0000" NextSta="1002" X="1167" Y="1327" ToPrivTime="3" ToNextTime="3" GPS="39.974160287681954, 116.29290103912354" name="巴沟"></station>
-    <station id="1002" IsExchangeSta="NO" PrivSta="1001" NextSta="1003" X="1237" Y="1309" ToPrivTime="3" ToNextTime="3" GPS="39.9756237656891, 116.30633354187012" name="苏州街"></station>
-    <station id="1003" IsExchangeSta="YE" PrivSta="1002" NextSta="1004" X="1322" Y="1309" ToPrivTime="3" ToNextTime="3" GPS="39.97567309586245, 116.31762027740479" name="海淀黄庄">
-      <ExStation TOPath="04,0407" NeedTime="2"></ExStation>
-    </station>
-    <station id="1004" IsExchangeSta="NO" PrivSta="1003" NextSta="1005" X="1461" Y="1309" ToPrivTime="3" ToNextTime="3" GPS="39.976314384875856, 116.32864952087402" name="知春里"></station>
-    <station id="1005" IsExchangeSta="YE" PrivSta="1004" NextSta="1006" X="1653" Y="1309" ToPrivTime="3" ToNextTime="3" GPS="39.97642948739513, 116.33997917175293" name="知春路">
-      <ExStation TOPath="13,1303" NeedTime="2"></ExStation>
-    </station>
-    <station id="1006" IsExchangeSta="NO" PrivSta="1005" NextSta="1007" X="1771" Y="1309" ToPrivTime="3" ToNextTime="3" GPS="39.97618283890216, 116.35332584381104" name="西土城"></station>
-    <station id="1007" IsExchangeSta="NO" PrivSta="1006" NextSta="1008" X="1876" Y="1309" ToPrivTime="3" ToNextTime="3" GPS="39.97636371455072, 116.37006282806396" name="牡丹园"></station>
-    <station id="1008" IsExchangeSta="NO" PrivSta="1007" NextSta="1009" X="1977" Y="1309" ToPrivTime="3" ToNextTime="3" GPS="39.97672546441165, 116.38143539428711" name="健德门"></station>
-    <station id="1009" IsExchangeSta="YE" PrivSta="1008" NextSta="1010" X="2085" Y="1309" ToPrivTime="3" ToNextTime="3" GPS="39.97692894786692, 116.39422215521336" name="北土城">
-      <ExStation TOPath="08,0810" NeedTime="2"></ExStation>
-    </station>
-    <station id="1010" IsExchangeSta="NO" PrivSta="1009" NextSta="1011" X="2214" Y="1309" ToPrivTime="3" ToNextTime="3" GPS="39.97692278171049, 116.40600442886353" name="安贞门"></station>
-    <station id="1011" IsExchangeSta="YE" PrivSta="1010" NextSta="1012" X="2342" Y="1309" ToPrivTime="3" ToNextTime="3" GPS="39.977120098439634, 116.41759157180786" name="惠新西街南口">
-      <ExStation TOPath="05,0509" NeedTime="2"></ExStation>
-    </station>
-    <station id="1012" IsExchangeSta="YE" PrivSta="1011" NextSta="1013" X="2538" Y="1309" ToPrivTime="3" ToNextTime="3" GPS="39.97787647395675, 116.43615245819092" name="芍药居">
-      <ExStation TOPath="13,1313" NeedTime="2"></ExStation>
-    </station>
-    <station id="1013" IsExchangeSta="NO" PrivSta="1012" NextSta="1014" X="2697" Y="1324" ToPrivTime="3" ToNextTime="3" GPS="39.97289410726716, 116.4476752281189" name="太阳宫"></station>
-    <station id="1014" IsExchangeSta="YE" PrivSta="1013" NextSta="1015" X="2720" Y="1409" ToPrivTime="3" ToNextTime="3" GPS="39.961267172466165, 116.45649433135986" name="三元桥">
-      <ExStation TOPath="19,1902" NeedTime="2"></ExStation>
-    </station>
-    <station id="1015" IsExchangeSta="NO" PrivSta="1014" NextSta="1016" X="2720" Y="1497" ToPrivTime="3" ToNextTime="3" GPS="39.949572461623006, 116.46173000335693" name="亮马桥"></station>
-    <station id="1016" IsExchangeSta="NO" PrivSta="1015" NextSta="1017" X="2720" Y="1568" ToPrivTime="3" ToNextTime="3" GPS="39.9416268127605, 116.46207332611084" name="农业展览馆"></station>
-    <station id="1017" IsExchangeSta="NO" PrivSta="1016" NextSta="1018" X="2720" Y="1640" ToPrivTime="3" ToNextTime="3" GPS="39.933713148072435, 116.46164417266846" name="团结湖"></station>
-    <station id="1018" IsExchangeSta="YE" PrivSta="1017" NextSta="1019" X="2720" Y="1742" ToPrivTime="3" ToNextTime="3" GPS="39.92337958480845, 116.46177291870117" name="呼家楼">
-      <ExStation TOPath="06,0613" NeedTime="2"></ExStation>
-    </station>
-    <station id="1019" IsExchangeSta="NO" PrivSta="1018" NextSta="1020" X="2720" Y="1794" ToPrivTime="3" ToNextTime="3" GPS="39.91725769384391, 116.46175146102905" name="金台夕照"></station>
-    <station id="1020" IsExchangeSta="YE" PrivSta="1019" NextSta="1021" X="2720" Y="1858" ToPrivTime="3" ToNextTime="3" GPS="39.90925891493912, 116.46183729171753" name="国贸">
-      <ExStation TOPath="01,0120" NeedTime="2"></ExStation>
-    </station>
-    <station id="1021" IsExchangeSta="NO" PrivSta="1020" NextSta="1022" X="2720" Y="1946" ToPrivTime="3" ToNextTime="3" GPS="39.89357135492846, 116.46185874938965" name="双井"></station>
-    <station id="1022" IsExchangeSta="NO" PrivSta="1021" NextSta="1023" X="2720" Y="2009" ToPrivTime="3" ToNextTime="3" GPS="39.88455411544503, 116.46123714745045" name="劲松"></station>
-    <station id="1023" IsExchangeSta="NO" PrivSta="1022" NextSta="1024" X="2720" Y="2071" ToPrivTime="3" ToNextTime="3" GPS="39.87547599532615, 116.46074295043945" name="潘家园"></station>
-    <station id="1024" IsExchangeSta="NO" PrivSta="1023" NextSta="1025" X="2706" Y="2151" ToPrivTime="3" ToNextTime="3" GPS="39.86580891035676, 116.45924091339111" name="十里河"></station>
-    <station id="1025" IsExchangeSta="NO" PrivSta="1024" NextSta="1026" X="2649" Y="2213" ToPrivTime="3" ToNextTime="3"  GPS="39.85198112934238, 116.45287871360779" name="分钟寺" />
-    <station id="1026" IsExchangeSta="NO" PrivSta="1025" NextSta="1027" X="2495" Y="2227" ToPrivTime="3" ToNextTime="3"  GPS="39.84614940142216, 116.44637703895569" name="成寿寺" />
-    <station id="1027" IsExchangeSta="YE" PrivSta="1026" NextSta="1028" X="2343" Y="2228" ToPrivTime="3" ToNextTime="3"  GPS="39.845935232491854, 116.42925381660461" name="宋家庄" >
-      <ExStation TOPath="05,0523" NeedTime="3"/>
-      <ExStation TOPath="17,1713" NeedTime="3"></ExStation>
-    </station>
-    <station id="1028" IsExchangeSta="NO" PrivSta="1027" NextSta="1029" X="2233" Y="2226" ToPrivTime="3" ToNextTime="3"  GPS="39.846108215141285, 116.4091157913208" name="石榴庄" />
-    <station id="1029" IsExchangeSta="NO" PrivSta="1028" NextSta="1030" X="2116" Y="2226" ToPrivTime="3" ToNextTime="3"  GPS="39.84574577480427, 116.38868808746338" name="大红门" />
-    <station id="1030" IsExchangeSta="NO" PrivSta="1029" NextSta="1031" X="2009" Y="2226" ToPrivTime="3" ToNextTime="3"  GPS="39.84507288688927, 116.38636898249388" name="角门东" />
-    <station id="1031" IsExchangeSta="YE" PrivSta="1030" NextSta="1032" X="1889" Y="2228" ToPrivTime="3" ToNextTime="3"  GPS="39.84624001115309, 116.36783123016357" name="角门西" >
-      <ExStation TOPath="04,0423" NeedTime="3"/>
-    </station>
-    <station id="1032" IsExchangeSta="NO" PrivSta="1031" NextSta="1033" X="1713" Y="2227" ToPrivTime="3" ToNextTime="3"  GPS="39.84607526609881, 116.34894847869873" name="草桥" />
-    <station id="1033" IsExchangeSta="NO" PrivSta="1032" NextSta="1034" X="1594" Y="2227" ToPrivTime="3" ToNextTime="3"  GPS="39.8447902411081, 116.33504390716553" name="纪家庙" />
-    <station id="1034" IsExchangeSta="NO" PrivSta="1033" NextSta="1035" X="1465" Y="2226" ToPrivTime="3" ToNextTime="3"  GPS="39.84482319076728, 116.32307052612305" name="首经贸" />
-    <station id="1035" IsExchangeSta="NO" PrivSta="1034" NextSta="1036" X="1330" Y="2225" ToPrivTime="3" ToNextTime="3"  GPS="39.851577537011, 116.3119125366211" name="丰台" />
-    <station id="1036" IsExchangeSta="NO" PrivSta="1035" NextSta="1037" X="1283" Y="2169" ToPrivTime="3" ToNextTime="3"  GPS="39.85837239765011, 116.30595803260803" name="泥洼" />
-    <station id="1037" IsExchangeSta="YE" PrivSta="1036" NextSta="1038" X="1279" Y="2087" ToPrivTime="3" ToNextTime="3"  GPS="39.86809817283228, 116.30496025085449" name="西局" >
-      <ExStation TOPath="14,1407" NeedTime="3"/>
-    </station>
-    <station id="1038" IsExchangeSta="YE" PrivSta="1037" NextSta="1039" X="1278" Y="2021" ToPrivTime="3" ToNextTime="3"  GPS="39.880630119164785, 116.30725622177124" name="六里桥" >
-      <ExStation TOPath="09,0907" NeedTime="3"/>
-    </station>
-    <station id="1039" IsExchangeSta="NO" PrivSta="1038" NextSta="1040" X="1279" Y="1943" ToPrivTime="3" ToNextTime="3"  GPS="39.899530746180425, 116.3146162033081" name="莲花桥" />
-    <station id="1040" IsExchangeSta="YE" PrivSta="1039" NextSta="1041" X="1280" Y="1858" ToPrivTime="3" ToNextTime="3"  GPS="39.90833718492366, 116.31219148635864" name="公主坟" >
-      <ExStation TOPath="01,0108" NeedTime="3"/>
-    </station>
-    <station id="1041" IsExchangeSta="NO" PrivSta="1040" NextSta="1042" X="1222" Y="1772" ToPrivTime="3" ToNextTime="3"  GPS="39.924877060837964, 116.33817672729492" name="西钓鱼台" />
-    <station id="1042" IsExchangeSta="YE" PrivSta="1041" NextSta="1043" X="1153" Y="1683" ToPrivTime="3" ToNextTime="3"  GPS="39.93659244591381, 116.33817672729492" name="慈寿寺" >
-      <ExStation TOPath="06,0602" NeedTime="3"/>
-    </station>
-    <station id="1043" IsExchangeSta="NO" PrivSta="1042" NextSta="1044" X="1154" Y="1582" ToPrivTime="3" ToNextTime="3"  GPS="39.94850322514123, 116.3016128540039" name="车道沟" />
-    <station id="1044" IsExchangeSta="NO" PrivSta="1043" NextSta="1045" X="1154" Y="1491" ToPrivTime="3" ToNextTime="3"  GPS="39.958701415600366, 116.30242824554443" name="长春桥" />
-    <station id="1045" IsExchangeSta="NO" PrivSta="1044" NextSta="9999" X="1154" Y="1400" ToPrivTime="3" ToNextTime="3"  GPS="39.966398397374064, 116.30126953125" name="火器营" />
-  </path>
+    <path name="十号线" id="10">
+        <station id="1001" IsExchangeSta="NO" PrivSta="0000" NextSta="1002" X="1167" Y="1327" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.974160287681954, 116.29290103912354" name="巴沟"></station>
+        <station id="1002" IsExchangeSta="NO" PrivSta="1001" NextSta="1003" X="1237" Y="1309" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.9756237656891, 116.30633354187012" name="苏州街"></station>
+        <station id="1003" IsExchangeSta="YE" PrivSta="1002" NextSta="1004" X="1322" Y="1309" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.97567309586245, 116.31762027740479" name="海淀黄庄">
+            <ExStation TOPath="04,0407" NeedTime="2"></ExStation>
+        </station>
+        <station id="1004" IsExchangeSta="NO" PrivSta="1003" NextSta="1005" X="1461" Y="1309" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.976314384875856, 116.32864952087402" name="知春里"></station>
+        <station id="1005" IsExchangeSta="YE" PrivSta="1004" NextSta="1006" X="1653" Y="1309" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.97642948739513, 116.33997917175293" name="知春路">
+            <ExStation TOPath="13,1303" NeedTime="2"></ExStation>
+        </station>
+        <station id="1006" IsExchangeSta="NO" PrivSta="1005" NextSta="1007" X="1771" Y="1309" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.97618283890216, 116.35332584381104" name="西土城"></station>
+        <station id="1007" IsExchangeSta="NO" PrivSta="1006" NextSta="1008" X="1876" Y="1309" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.97636371455072, 116.37006282806396" name="牡丹园"></station>
+        <station id="1008" IsExchangeSta="NO" PrivSta="1007" NextSta="1009" X="1977" Y="1309" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.97672546441165, 116.38143539428711" name="健德门"></station>
+        <station id="1009" IsExchangeSta="YE" PrivSta="1008" NextSta="1010" X="2085" Y="1309" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.97692894786692, 116.39422215521336" name="北土城">
+            <ExStation TOPath="08,0810" NeedTime="2"></ExStation>
+        </station>
+        <station id="1010" IsExchangeSta="NO" PrivSta="1009" NextSta="1011" X="2214" Y="1309" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.97692278171049, 116.40600442886353" name="安贞门"></station>
+        <station id="1011" IsExchangeSta="YE" PrivSta="1010" NextSta="1012" X="2342" Y="1309" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.977120098439634, 116.41759157180786" name="惠新西街南口">
+            <ExStation TOPath="05,0509" NeedTime="2"></ExStation>
+        </station>
+        <station id="1012" IsExchangeSta="YE" PrivSta="1011" NextSta="1013" X="2538" Y="1309" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.97787647395675, 116.43615245819092" name="芍药居">
+            <ExStation TOPath="13,1313" NeedTime="2"></ExStation>
+        </station>
+        <station id="1013" IsExchangeSta="NO" PrivSta="1012" NextSta="1014" X="2697" Y="1324" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.97289410726716, 116.4476752281189" name="太阳宫"></station>
+        <station id="1014" IsExchangeSta="YE" PrivSta="1013" NextSta="1015" X="2720" Y="1409" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.961267172466165, 116.45649433135986" name="三元桥">
+            <ExStation TOPath="19,1902" NeedTime="2"></ExStation>
+        </station>
+        <station id="1015" IsExchangeSta="NO" PrivSta="1014" NextSta="1016" X="2720" Y="1497" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.949572461623006, 116.46173000335693" name="亮马桥"></station>
+        <station id="1016" IsExchangeSta="NO" PrivSta="1015" NextSta="1017" X="2720" Y="1568" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.9416268127605, 116.46207332611084" name="农业展览馆"></station>
+        <station id="1017" IsExchangeSta="NO" PrivSta="1016" NextSta="1018" X="2720" Y="1640" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.933713148072435, 116.46164417266846" name="团结湖"></station>
+        <station id="1018" IsExchangeSta="YE" PrivSta="1017" NextSta="1019" X="2720" Y="1742" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.92337958480845, 116.46177291870117" name="呼家楼">
+            <ExStation TOPath="06,0613" NeedTime="2"></ExStation>
+        </station>
+        <station id="1019" IsExchangeSta="NO" PrivSta="1018" NextSta="1020" X="2720" Y="1794" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.91725769384391, 116.46175146102905" name="金台夕照"></station>
+        <station id="1020" IsExchangeSta="YE" PrivSta="1019" NextSta="1021" X="2720" Y="1858" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.90925891493912, 116.46183729171753" name="国贸">
+            <ExStation TOPath="01,0120" NeedTime="2"></ExStation>
+        </station>
+        <station id="1021" IsExchangeSta="NO" PrivSta="1020" NextSta="1022" X="2720" Y="1946" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.89357135492846, 116.46185874938965" name="双井"></station>
+        <station id="1022" IsExchangeSta="NO" PrivSta="1021" NextSta="1023" X="2720" Y="2009" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.88455411544503, 116.46123714745045" name="劲松"></station>
+        <station id="1023" IsExchangeSta="NO" PrivSta="1022" NextSta="1024" X="2720" Y="2071" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.87547599532615, 116.46074295043945" name="潘家园"></station>
+        <station id="1024" IsExchangeSta="NO" PrivSta="1023" NextSta="1025" X="2706" Y="2151" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.86580891035676, 116.45924091339111" name="十里河"></station>
+        <station id="1025" IsExchangeSta="NO" PrivSta="1024" NextSta="1026" X="2649" Y="2213" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.85198112934238, 116.45287871360779" name="分钟寺"/>
+        <station id="1026" IsExchangeSta="NO" PrivSta="1025" NextSta="1027" X="2495" Y="2227" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.84614940142216, 116.44637703895569" name="成寿寺"/>
+        <station id="1027" IsExchangeSta="YE" PrivSta="1026" NextSta="1028" X="2343" Y="2228" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.845935232491854, 116.42925381660461" name="宋家庄">
+            <ExStation TOPath="05,0523" NeedTime="3"/>
+            <ExStation TOPath="17,1713" NeedTime="3"></ExStation>
+        </station>
+        <station id="1028" IsExchangeSta="NO" PrivSta="1027" NextSta="1029" X="2233" Y="2226" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.846108215141285, 116.4091157913208" name="石榴庄"/>
+        <station id="1029" IsExchangeSta="NO" PrivSta="1028" NextSta="1030" X="2116" Y="2226" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.84574577480427, 116.38868808746338" name="大红门"/>
+        <station id="1030" IsExchangeSta="NO" PrivSta="1029" NextSta="1031" X="2009" Y="2226" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.84507288688927, 116.38636898249388" name="角门东"/>
+        <station id="1031" IsExchangeSta="YE" PrivSta="1030" NextSta="1032" X="1889" Y="2228" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.84624001115309, 116.36783123016357" name="角门西">
+            <ExStation TOPath="04,0423" NeedTime="3"/>
+        </station>
+        <station id="1032" IsExchangeSta="NO" PrivSta="1031" NextSta="1033" X="1713" Y="2227" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.84607526609881, 116.34894847869873" name="草桥"/>
+        <station id="1033" IsExchangeSta="NO" PrivSta="1032" NextSta="1034" X="1594" Y="2227" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.8447902411081, 116.33504390716553" name="纪家庙"/>
+        <station id="1034" IsExchangeSta="NO" PrivSta="1033" NextSta="1035" X="1465" Y="2226" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.84482319076728, 116.32307052612305" name="首经贸"/>
+        <station id="1035" IsExchangeSta="NO" PrivSta="1034" NextSta="1036" X="1330" Y="2225" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.851577537011, 116.3119125366211" name="丰台"/>
+        <station id="1036" IsExchangeSta="NO" PrivSta="1035" NextSta="1037" X="1283" Y="2169" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.85837239765011, 116.30595803260803" name="泥洼"/>
+        <station id="1037" IsExchangeSta="YE" PrivSta="1036" NextSta="1038" X="1279" Y="2087" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.86809817283228, 116.30496025085449" name="西局">
+            <ExStation TOPath="14,1407" NeedTime="3"/>
+        </station>
+        <station id="1038" IsExchangeSta="YE" PrivSta="1037" NextSta="1039" X="1278" Y="2021" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.880630119164785, 116.30725622177124" name="六里桥">
+            <ExStation TOPath="09,0907" NeedTime="3"/>
+        </station>
+        <station id="1039" IsExchangeSta="NO" PrivSta="1038" NextSta="1040" X="1279" Y="1943" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.899530746180425, 116.3146162033081" name="莲花桥"/>
+        <station id="1040" IsExchangeSta="YE" PrivSta="1039" NextSta="1041" X="1280" Y="1858" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.90833718492366, 116.31219148635864" name="公主坟">
+            <ExStation TOPath="01,0108" NeedTime="3"/>
+        </station>
+        <station id="1041" IsExchangeSta="NO" PrivSta="1040" NextSta="1042" X="1222" Y="1772" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.924877060837964, 116.33817672729492" name="西钓鱼台"/>
+        <station id="1042" IsExchangeSta="YE" PrivSta="1041" NextSta="1043" X="1153" Y="1683" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.93659244591381, 116.33817672729492" name="慈寿寺">
+            <ExStation TOPath="06,0602" NeedTime="3"/>
+        </station>
+        <station id="1043" IsExchangeSta="NO" PrivSta="1042" NextSta="1044" X="1154" Y="1582" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.94850322514123, 116.3016128540039" name="车道沟"/>
+        <station id="1044" IsExchangeSta="NO" PrivSta="1043" NextSta="1045" X="1154" Y="1491" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.958701415600366, 116.30242824554443" name="长春桥"/>
+        <station id="1045" IsExchangeSta="NO" PrivSta="1044" NextSta="9999" X="1154" Y="1400" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.966398397374064, 116.30126953125" name="火器营"/>
+    </path>
 
-  <path name="十三号线" id="13">
-    <station id="1301" IsExchangeSta="YE"  PrivSta="0000" NextSta="1302" X="1712" Y="1559" ToPrivTime="0" ToNextTime="3" GPS="39.9407469049474, 116.35541796684265" name="西直门" >
-      <ExStation TOPath="02,0201" NeedTime="3"></ExStation>
-      <ExStation TOPath="04,0412" NeedTime="2"></ExStation>
-    </station>
-    <station id="1302" IsExchangeSta="NO"  PrivSta="1301" NextSta="1303" X="1650" Y="1432" ToPrivTime="3" ToNextTime="2" GPS="39.966596001449524, 116.34509112685919" name="大钟寺" ></station>
-    <station id="1303" IsExchangeSta="YE"  PrivSta="1302" NextSta="1304" X="1650" Y="1311" ToPrivTime="2" ToNextTime="3" GPS="39.976478046212314, 116.33996408432722" name="知春路" >
-      <ExStation TOPath="10,1005" NeedTime="3">
-      </ExStation>
-    </station>
-    <station id="1304" IsExchangeSta="NO"  PrivSta="1303" NextSta="1305" X="1650" Y="1216" ToPrivTime="3" ToNextTime="6" GPS="39.992930047696554, 116.33763089776039" name="五道口" ></station>
-    <station id="1305" IsExchangeSta="NO"  PrivSta="1304" NextSta="1306" X="1650" Y="1137" ToPrivTime="6" ToNextTime="3" GPS="40.03307748664469, 116.32190108299255" name="上地" ></station>
-    <station id="1306" IsExchangeSta="YE"  PrivSta="1305" NextSta="1307" X="1650" Y="1044" ToPrivTime="3" ToNextTime="5" GPS="40.05367704925627, 116.30696654319763" name="西二旗" >
-      <ExStation TOPath="16,1607" NeedTime="6"></ExStation>
-    </station>
-    <station id="1307" IsExchangeSta="NO"  PrivSta="1306" NextSta="1308" X="1751" Y="944" ToPrivTime="5" ToNextTime="2" GPS="40.072226111833366, 116.31916522979736" name="龙泽" ></station>
-    <station id="1308" IsExchangeSta="NO"  PrivSta="1307" NextSta="1309" X="1859" Y="944" ToPrivTime="2" ToNextTime="2" GPS="40.07079754549362, 116.33627504110336" name="回龙观" ></station>
-    <station id="1309" IsExchangeSta="YE"  PrivSta="1308" NextSta="1310" X="2000" Y="944" ToPrivTime="2" ToNextTime="1" GPS="40.07181560733249, 116.36032104492188" name="霍营" >
-      <ExStation TOPath="08,0802" NeedTime="3"></ExStation>
-    </station>
-    <station id="1310" IsExchangeSta="YE"  PrivSta="1309" NextSta="1311" X="2341" Y="944" ToPrivTime="1" ToNextTime="3" GPS="40.05304469915788, 116.41233444213867" name="立水桥" >
-      <ExStation TOPath="05,0504" NeedTime="3"></ExStation>
-    </station>
-    <station id="1311" IsExchangeSta="NO"  PrivSta="1310" NextSta="1312" X="2539" Y="1020" ToPrivTime="3" ToNextTime="7" GPS="40.04299200840544, 116.43452167510986" name="北苑" ></station>
-    <station id="1312" IsExchangeSta="YE"  PrivSta="1311" NextSta="1313" X="2538" Y="1168" ToPrivTime="7" ToNextTime="3" GPS="39.99527080014614, 116.44778251647949" name="望京西" >
-      <ExStation TOPath="15,1501" NeedTime="2"></ExStation>
-    </station>
-    <station id="1313" IsExchangeSta="YE"  PrivSta="1312" NextSta="1314" X="2540" Y="1304" ToPrivTime="3" ToNextTime="2" GPS="39.976857009340854, 116.43838405609131" name="芍药居" >
-      <ExStation TOPath="10,1012" NeedTime="4"></ExStation>
-    </station>
-    <station id="1314" IsExchangeSta="NO"  PrivSta="1313" NextSta="1315" X="2537" Y="1410" ToPrivTime="2" ToNextTime="2" GPS="39.968437623408015, 116.43173217773438" name="光熙门" ></station>
-    <station id="1315" IsExchangeSta="NO"  PrivSta="1314" NextSta="1316" X="2540" Y="1477" ToPrivTime="2" ToNextTime="2" GPS="39.9582737800962, 116.43280506134033" name="柳芳" ></station>
-    <station id="1316" IsExchangeSta="YE"  PrivSta="1315" NextSta="9999" X="2495" Y="1558" ToPrivTime="2" ToNextTime="0" GPS="39.94113326375916, 116.43353462219238" name="东直门" >
-      <ExStation TOPath="02,0214" NeedTime="3"></ExStation>
-      <ExStation TOPath="19,1901" NeedTime="2"></ExStation>
-    </station>
-  </path>
+    <path name="十三号线" id="13">
+        <station id="1301" IsExchangeSta="YE" PrivSta="0000" NextSta="1302" X="1712" Y="1559" ToPrivTime="0"
+                 ToNextTime="3" GPS="39.9407469049474, 116.35541796684265" name="西直门">
+            <ExStation TOPath="02,0201" NeedTime="3"></ExStation>
+            <ExStation TOPath="04,0412" NeedTime="2"></ExStation>
+        </station>
+        <station id="1302" IsExchangeSta="NO" PrivSta="1301" NextSta="1303" X="1650" Y="1432" ToPrivTime="3"
+                 ToNextTime="2" GPS="39.966596001449524, 116.34509112685919" name="大钟寺"></station>
+        <station id="1303" IsExchangeSta="YE" PrivSta="1302" NextSta="1304" X="1650" Y="1311" ToPrivTime="2"
+                 ToNextTime="3" GPS="39.976478046212314, 116.33996408432722" name="知春路">
+            <ExStation TOPath="10,1005" NeedTime="3">
+            </ExStation>
+        </station>
+        <station id="1304" IsExchangeSta="NO" PrivSta="1303" NextSta="1305" X="1650" Y="1216" ToPrivTime="3"
+                 ToNextTime="6" GPS="39.992930047696554, 116.33763089776039" name="五道口"></station>
+        <station id="1305" IsExchangeSta="NO" PrivSta="1304" NextSta="1306" X="1650" Y="1137" ToPrivTime="6"
+                 ToNextTime="3" GPS="40.03307748664469, 116.32190108299255" name="上地"></station>
+        <station id="1306" IsExchangeSta="YE" PrivSta="1305" NextSta="1307" X="1650" Y="1044" ToPrivTime="3"
+                 ToNextTime="5" GPS="40.05367704925627, 116.30696654319763" name="西二旗">
+            <ExStation TOPath="16,1607" NeedTime="6"></ExStation>
+        </station>
+        <station id="1307" IsExchangeSta="NO" PrivSta="1306" NextSta="1308" X="1751" Y="944" ToPrivTime="5"
+                 ToNextTime="2" GPS="40.072226111833366, 116.31916522979736" name="龙泽"></station>
+        <station id="1308" IsExchangeSta="NO" PrivSta="1307" NextSta="1309" X="1859" Y="944" ToPrivTime="2"
+                 ToNextTime="2" GPS="40.07079754549362, 116.33627504110336" name="回龙观"></station>
+        <station id="1309" IsExchangeSta="YE" PrivSta="1308" NextSta="1310" X="2000" Y="944" ToPrivTime="2"
+                 ToNextTime="1" GPS="40.07181560733249, 116.36032104492188" name="霍营">
+            <ExStation TOPath="08,0802" NeedTime="3"></ExStation>
+        </station>
+        <station id="1310" IsExchangeSta="YE" PrivSta="1309" NextSta="1311" X="2341" Y="944" ToPrivTime="1"
+                 ToNextTime="3" GPS="40.05304469915788, 116.41233444213867" name="立水桥">
+            <ExStation TOPath="05,0504" NeedTime="3"></ExStation>
+        </station>
+        <station id="1311" IsExchangeSta="NO" PrivSta="1310" NextSta="1312" X="2539" Y="1020" ToPrivTime="3"
+                 ToNextTime="7" GPS="40.04299200840544, 116.43452167510986" name="北苑"></station>
+        <station id="1312" IsExchangeSta="YE" PrivSta="1311" NextSta="1313" X="2538" Y="1168" ToPrivTime="7"
+                 ToNextTime="3" GPS="39.99527080014614, 116.44778251647949" name="望京西">
+            <ExStation TOPath="15,1501" NeedTime="2"></ExStation>
+        </station>
+        <station id="1313" IsExchangeSta="YE" PrivSta="1312" NextSta="1314" X="2540" Y="1304" ToPrivTime="3"
+                 ToNextTime="2" GPS="39.976857009340854, 116.43838405609131" name="芍药居">
+            <ExStation TOPath="10,1012" NeedTime="4"></ExStation>
+        </station>
+        <station id="1314" IsExchangeSta="NO" PrivSta="1313" NextSta="1315" X="2537" Y="1410" ToPrivTime="2"
+                 ToNextTime="2" GPS="39.968437623408015, 116.43173217773438" name="光熙门"></station>
+        <station id="1315" IsExchangeSta="NO" PrivSta="1314" NextSta="1316" X="2540" Y="1477" ToPrivTime="2"
+                 ToNextTime="2" GPS="39.9582737800962, 116.43280506134033" name="柳芳"></station>
+        <station id="1316" IsExchangeSta="YE" PrivSta="1315" NextSta="9999" X="2495" Y="1558" ToPrivTime="2"
+                 ToNextTime="0" GPS="39.94113326375916, 116.43353462219238" name="东直门">
+            <ExStation TOPath="02,0214" NeedTime="3"></ExStation>
+            <ExStation TOPath="19,1901" NeedTime="2"></ExStation>
+        </station>
+    </path>
 
-  <path name="十四号线" id="14">
-    <station id="1401" IsExchangeSta="NO" PrivSta="0000" NextSta="1402" X="638" Y="2087" ToPrivTime="3" ToNextTime="3" GPS="39.85503605070751, 116.21857300400734" name="张郭庄"></station>
-    <station id="1402" IsExchangeSta="NO" PrivSta="1401" NextSta="1403" X="732" Y="2087" ToPrivTime="3" ToNextTime="3" GPS="39.85823238912801, 116.21861457824707" name="园博园"></station>
-    <station id="1403" IsExchangeSta="NO" PrivSta="1402" NextSta="1404" X="827" Y="2087" ToPrivTime="3" ToNextTime="3" GPS="39.85971481780381, 116.24208927154541" name="大瓦窑"></station>
-    <station id="1404" IsExchangeSta="NO" PrivSta="1403" NextSta="1405" X="930" Y="2087" ToPrivTime="3" ToNextTime="3" GPS="39.86498541596498, 116.25290393829346" name="郭庄子"></station>
-    <station id="1405" IsExchangeSta="NO" PrivSta="1404" NextSta="1406" X="1028" Y="2087" ToPrivTime="3" ToNextTime="3" GPS="39.86763703257838, 116.2868070602417" name="大井"></station>
-    <station id="1406" IsExchangeSta="NO" PrivSta="1405" NextSta="1407" X="1188" Y="2087" ToPrivTime="3" ToNextTime="3" GPS="39.86771114461396, 116.2954330444336" name="七里庄"></station>
-    <station id="1407" IsExchangeSta="YE" PrivSta="1406" NextSta="9999" X="1279" Y="2087" ToPrivTime="3" ToNextTime="3" GPS="39.86768644061099, 116.30483150482178" name="西局">
-      <ExStation TOPath="10,1037" NeedTime="6"> </ExStation>
-    </station>
-  </path>
+    <path name="十四号线" id="14">
+        <station id="1401" IsExchangeSta="NO" PrivSta="0000" NextSta="1402" X="638" Y="2087" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.85503605070751, 116.21857300400734" name="张郭庄"></station>
+        <station id="1402" IsExchangeSta="NO" PrivSta="1401" NextSta="1403" X="732" Y="2087" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.85823238912801, 116.21861457824707" name="园博园"></station>
+        <station id="1403" IsExchangeSta="NO" PrivSta="1402" NextSta="1404" X="827" Y="2087" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.85971481780381, 116.24208927154541" name="大瓦窑"></station>
+        <station id="1404" IsExchangeSta="NO" PrivSta="1403" NextSta="1405" X="930" Y="2087" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.86498541596498, 116.25290393829346" name="郭庄子"></station>
+        <station id="1405" IsExchangeSta="NO" PrivSta="1404" NextSta="1406" X="1028" Y="2087" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.86763703257838, 116.2868070602417" name="大井"></station>
+        <station id="1406" IsExchangeSta="NO" PrivSta="1405" NextSta="1407" X="1188" Y="2087" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.86771114461396, 116.2954330444336" name="七里庄"></station>
+        <station id="1407" IsExchangeSta="YE" PrivSta="1406" NextSta="9999" X="1279" Y="2087" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.86768644061099, 116.30483150482178" name="西局">
+            <ExStation TOPath="10,1037" NeedTime="6"></ExStation>
+        </station>
+    </path>
 
-  <path name="十五号线" id="15">
-    <station id="1501" IsExchangeSta="YE"  PrivSta="0000" NextSta="1502" X="2540" Y="1170" ToPrivTime="7" ToNextTime="3" GPS="39.99527080014614, 116.44778251647949" name="望京西" >
-      <ExStation TOPath="13,1312" NeedTime="3"></ExStation>
-    </station>
-    <station id="1502" IsExchangeSta="NO"  PrivSta="1501" NextSta="1503" X="2687" Y="1169" ToPrivTime="4" ToNextTime="3" GPS="40.00033372247905, 116.48091316223145" name="望京" ></station>
-    <station id="1503" IsExchangeSta="NO"  PrivSta="1502" NextSta="1504" X="2809" Y="1169" ToPrivTime="4" ToNextTime="3" GPS="40.00467307142486, 116.49211406707764" name="望京东" ></station>
-    <station id="1504" IsExchangeSta="NO"  PrivSta="1503" NextSta="1505" X="2869" Y="1101" ToPrivTime="4" ToNextTime="3" GPS="40.02261926678969, 116.49528980255127" name="崔各庄" ></station>
-    <station id="1505" IsExchangeSta="NO"  PrivSta="1504" NextSta="1506" X="2869" Y="1028" ToPrivTime="4" ToNextTime="3" GPS="40.034120756046434, 116.49983882904053" name="马泉营" ></station>
-    <station id="1506" IsExchangeSta="NO"  PrivSta="1505" NextSta="1507" X="2869" Y="953" ToPrivTime="4" ToNextTime="3" GPS="40.04539033398406, 116.53223991394043" name="孙河" ></station>
-    <station id="1507" IsExchangeSta="NO"  PrivSta="1506" NextSta="1508" X="2869" Y="881" ToPrivTime="4" ToNextTime="3" GPS="40.070518396847284, 116.55820369720459" name="国展" ></station>
-    <station id="1508" IsExchangeSta="NO"  PrivSta="1507" NextSta="1509" X="2869" Y="808" ToPrivTime="4" ToNextTime="3" GPS="40.08480277040264, 116.56352519989014" name="花梨坎" ></station>
-    <station id="1509" IsExchangeSta="NO"  PrivSta="1508" NextSta="1510" X="2869" Y="731" ToPrivTime="4" ToNextTime="3" GPS="40.11434713288346, 116.56721591949463" name="后沙峪" ></station>
-    <station id="1510" IsExchangeSta="NO"  PrivSta="1509" NextSta="1511" X="3012" Y="699" ToPrivTime="4" ToNextTime="3" GPS="40.12868793526164, 116.59923076629639" name="南法信" ></station>
-    <station id="1511" IsExchangeSta="NO"  PrivSta="1510" NextSta="1512" X="3193" Y="699" ToPrivTime="4" ToNextTime="3" GPS="40.13049262742551, 116.630859375" name="石门" ></station>
-    <station id="1512" IsExchangeSta="NO"  PrivSta="1511" NextSta="1513" X="3365" Y="699" ToPrivTime="4" ToNextTime="3" GPS="40.13206759233816, 116.65673732757568" name="顺义" ></station>
-    <station id="1513" IsExchangeSta="NO"  PrivSta="1512" NextSta="9999" X="3564" Y="699" ToPrivTime="4" ToNextTime="3" GPS="40.133084737780756, 116.68257236480713" name="俸伯" ></station>
-  </path>
+    <path name="十五号线" id="15">
+        <station id="1501" IsExchangeSta="YE" PrivSta="0000" NextSta="1502" X="2540" Y="1170" ToPrivTime="7"
+                 ToNextTime="3" GPS="39.99527080014614, 116.44778251647949" name="望京西">
+            <ExStation TOPath="13,1312" NeedTime="3"></ExStation>
+        </station>
+        <station id="1502" IsExchangeSta="NO" PrivSta="1501" NextSta="1503" X="2687" Y="1169" ToPrivTime="4"
+                 ToNextTime="3" GPS="40.00033372247905, 116.48091316223145" name="望京"></station>
+        <station id="1503" IsExchangeSta="NO" PrivSta="1502" NextSta="1504" X="2809" Y="1169" ToPrivTime="4"
+                 ToNextTime="3" GPS="40.00467307142486, 116.49211406707764" name="望京东"></station>
+        <station id="1504" IsExchangeSta="NO" PrivSta="1503" NextSta="1505" X="2869" Y="1101" ToPrivTime="4"
+                 ToNextTime="3" GPS="40.02261926678969, 116.49528980255127" name="崔各庄"></station>
+        <station id="1505" IsExchangeSta="NO" PrivSta="1504" NextSta="1506" X="2869" Y="1028" ToPrivTime="4"
+                 ToNextTime="3" GPS="40.034120756046434, 116.49983882904053" name="马泉营"></station>
+        <station id="1506" IsExchangeSta="NO" PrivSta="1505" NextSta="1507" X="2869" Y="953" ToPrivTime="4"
+                 ToNextTime="3" GPS="40.04539033398406, 116.53223991394043" name="孙河"></station>
+        <station id="1507" IsExchangeSta="NO" PrivSta="1506" NextSta="1508" X="2869" Y="881" ToPrivTime="4"
+                 ToNextTime="3" GPS="40.070518396847284, 116.55820369720459" name="国展"></station>
+        <station id="1508" IsExchangeSta="NO" PrivSta="1507" NextSta="1509" X="2869" Y="808" ToPrivTime="4"
+                 ToNextTime="3" GPS="40.08480277040264, 116.56352519989014" name="花梨坎"></station>
+        <station id="1509" IsExchangeSta="NO" PrivSta="1508" NextSta="1510" X="2869" Y="731" ToPrivTime="4"
+                 ToNextTime="3" GPS="40.11434713288346, 116.56721591949463" name="后沙峪"></station>
+        <station id="1510" IsExchangeSta="NO" PrivSta="1509" NextSta="1511" X="3012" Y="699" ToPrivTime="4"
+                 ToNextTime="3" GPS="40.12868793526164, 116.59923076629639" name="南法信"></station>
+        <station id="1511" IsExchangeSta="NO" PrivSta="1510" NextSta="1512" X="3193" Y="699" ToPrivTime="4"
+                 ToNextTime="3" GPS="40.13049262742551, 116.630859375" name="石门"></station>
+        <station id="1512" IsExchangeSta="NO" PrivSta="1511" NextSta="1513" X="3365" Y="699" ToPrivTime="4"
+                 ToNextTime="3" GPS="40.13206759233816, 116.65673732757568" name="顺义"></station>
+        <station id="1513" IsExchangeSta="NO" PrivSta="1512" NextSta="9999" X="3564" Y="699" ToPrivTime="4"
+                 ToNextTime="3" GPS="40.133084737780756, 116.68257236480713" name="俸伯"></station>
+    </path>
 
-  <path name="昌平线" id="16">
-    <station id="1601" IsExchangeSta="NO" PrivSta="0000" NextSta="1602" X="1739" Y="634" ToPrivTime="3" ToNextTime="3" GPS="40.207102934370994, 116.28737803548574" name="南邵"/>
-    <station id="1602" IsExchangeSta="NO" PrivSta="1601" NextSta="1603" X="1739" Y="699" ToPrivTime="3" ToNextTime="3" GPS="40.16466301327969, 116.28036305308342" name="沙河高教园"/>
-    <station id="1603" IsExchangeSta="NO" PrivSta="1602" NextSta="1604" X="1739" Y="745" ToPrivTime="3" ToNextTime="3" GPS="40.148319077850196, 116.28870002925396" name="沙河"/>
-    <station id="1604" IsExchangeSta="NO" PrivSta="1603" NextSta="1605" X="1739" Y="798" ToPrivTime="3" ToNextTime="3" GPS="40.13092892507135, 116.29387702792883" name="巩华城"/>
-    <station id="1605" IsExchangeSta="NO" PrivSta="1604" NextSta="1606" X="1739" Y="858" ToPrivTime="3" ToNextTime="3" GPS="40.10433810888591, 116.31362110376358" name="朱辛庄"/>
-    <station id="1606" IsExchangeSta="NO" PrivSta="1605" NextSta="1607" X="1654" Y="921" ToPrivTime="3" ToNextTime="3" GPS="40.094872889070274, 116.29413686692714" name="生命科学园"/>
-    <station id="1607" IsExchangeSta="YE" PrivSta="1606" NextSta="9999" X="1652" Y="1043" ToPrivTime="3" ToNextTime="3" GPS="40.05306189382016, 116.3060100004077" name="西二旗">
-      <ExStation TOPath="13,1306" NeedTime="4"></ExStation>
-    </station>
-  </path>
+    <path name="昌平线" id="16">
+        <station id="1601" IsExchangeSta="NO" PrivSta="0000" NextSta="1602" X="1739" Y="634" ToPrivTime="3"
+                 ToNextTime="3" GPS="40.207102934370994, 116.28737803548574" name="南邵"/>
+        <station id="1602" IsExchangeSta="NO" PrivSta="1601" NextSta="1603" X="1739" Y="699" ToPrivTime="3"
+                 ToNextTime="3" GPS="40.16466301327969, 116.28036305308342" name="沙河高教园"/>
+        <station id="1603" IsExchangeSta="NO" PrivSta="1602" NextSta="1604" X="1739" Y="745" ToPrivTime="3"
+                 ToNextTime="3" GPS="40.148319077850196, 116.28870002925396" name="沙河"/>
+        <station id="1604" IsExchangeSta="NO" PrivSta="1603" NextSta="1605" X="1739" Y="798" ToPrivTime="3"
+                 ToNextTime="3" GPS="40.13092892507135, 116.29387702792883" name="巩华城"/>
+        <station id="1605" IsExchangeSta="NO" PrivSta="1604" NextSta="1606" X="1739" Y="858" ToPrivTime="3"
+                 ToNextTime="3" GPS="40.10433810888591, 116.31362110376358" name="朱辛庄"/>
+        <station id="1606" IsExchangeSta="NO" PrivSta="1605" NextSta="1607" X="1654" Y="921" ToPrivTime="3"
+                 ToNextTime="3" GPS="40.094872889070274, 116.29413686692714" name="生命科学园"/>
+        <station id="1607" IsExchangeSta="YE" PrivSta="1606" NextSta="9999" X="1652" Y="1043" ToPrivTime="3"
+                 ToNextTime="3" GPS="40.05306189382016, 116.3060100004077" name="西二旗">
+            <ExStation TOPath="13,1306" NeedTime="4"></ExStation>
+        </station>
+    </path>
 
-  <path name="亦庄线" id="17">
-    <station id="1701"  PrivSta="0000" NextSta="1702" X="3050" Y="2612" ToPrivTime="0" ToNextTime="3" GPS="39.810992043462505, 116.59920930862427" IsExchangeSta="NO"  name="亦庄火车站" />
-    <station id="1702"  PrivSta="1701" NextSta="1703" X="2958" Y="2614" ToPrivTime="0" ToNextTime="3" GPS="39.803079776694204, 116.5917420387268" IsExchangeSta="NO"  name="次渠" />
-    <station id="1703"  PrivSta="1702" NextSta="1704" X="2866" Y="2614" ToPrivTime="3" ToNextTime="2" GPS="39.78991795020852, 116.57171599566936" IsExchangeSta="NO"  name="次渠南" />
-    <station id="1704"  PrivSta="1703" NextSta="1705" X="2770" Y="2614" ToPrivTime="2" ToNextTime="3" GPS="39.7838392801483, 116.56243085861206" IsExchangeSta="NO"  name="经海路" />
-    <station id="1705"  PrivSta="1704" NextSta="1706" X="2674" Y="2614" ToPrivTime="3" ToNextTime="6" GPS="39.773315114949696, 116.54020607471466" IsExchangeSta="NO"  name="同济南路" />
-    <station id="1706"  PrivSta="1705" NextSta="1707" X="2619" Y="2595" ToPrivTime="6" ToNextTime="3" GPS="39.78288288543499, 116.52129650115967" IsExchangeSta="NO"  name="荣昌东街" />
-    <station id="1707"  PrivSta="1706" NextSta="1708" X="2579" Y="2557" ToPrivTime="3" ToNextTime="5" GPS="39.793204649968224, 116.51322841644287" IsExchangeSta="NO"  name="荣京东街" />
-    <station id="1708"  PrivSta="1707" NextSta="1709" X="2535" Y="2515" ToPrivTime="5" ToNextTime="2" GPS="39.80365674359022, 116.50516033172607" IsExchangeSta="NO"  name="万源街" />
-    <station id="1709"  PrivSta="1708" NextSta="1710" X="2495" Y="2478" ToPrivTime="2" ToNextTime="2" GPS="39.80746460368237, 116.49170637130737" IsExchangeSta="NO"  name="亦庄文化园" />
-    <station id="1710"  PrivSta="1709" NextSta="1711" X="2460" Y="2444" ToPrivTime="2" ToNextTime="1" GPS="39.802848988580244, 116.48026943206787" IsExchangeSta="NO"  name="亦庄桥"/>
-    <station id="1711"  PrivSta="1710" NextSta="1712" X="2418" Y="2404" ToPrivTime="1" ToNextTime="3" GPS="39.806706345328976, 116.46095752716064" IsExchangeSta="NO"  name="旧宫" />
-    <station id="1712"  PrivSta="1711" NextSta="1713" X="2381" Y="2367" ToPrivTime="3" ToNextTime="7" GPS="39.82803689587217, 116.45985513925552" IsExchangeSta="NO"  name="小红门" />
-    <station id="1713"  PrivSta="1712" NextSta="1714" X="2343" Y="2329" ToPrivTime="7" ToNextTime="3" GPS="39.83322393392368, 116.4481258392334" IsExchangeSta="NO"  name="肖村" />
-    <station id="1714"  PrivSta="1713" NextSta="9999" X="2342" Y="2227" ToPrivTime="3" ToNextTime="2" GPS="39.84584204820541, 116.42835896462202" IsExchangeSta="YE"  name="宋家庄" >
-      <ExStation TOPath="05,0523" NeedTime="3"></ExStation>
-      <ExStation TOPath="10,1027" NeedTime="3"></ExStation>
-    </station>
+    <path name="亦庄线" id="17">
+        <station id="1701" PrivSta="0000" NextSta="1702" X="3050" Y="2612" ToPrivTime="0" ToNextTime="3"
+                 GPS="39.810992043462505, 116.59920930862427" IsExchangeSta="NO" name="亦庄火车站"/>
+        <station id="1702" PrivSta="1701" NextSta="1703" X="2958" Y="2614" ToPrivTime="0" ToNextTime="3"
+                 GPS="39.803079776694204, 116.5917420387268" IsExchangeSta="NO" name="次渠"/>
+        <station id="1703" PrivSta="1702" NextSta="1704" X="2866" Y="2614" ToPrivTime="3" ToNextTime="2"
+                 GPS="39.78991795020852, 116.57171599566936" IsExchangeSta="NO" name="次渠南"/>
+        <station id="1704" PrivSta="1703" NextSta="1705" X="2770" Y="2614" ToPrivTime="2" ToNextTime="3"
+                 GPS="39.7838392801483, 116.56243085861206" IsExchangeSta="NO" name="经海路"/>
+        <station id="1705" PrivSta="1704" NextSta="1706" X="2674" Y="2614" ToPrivTime="3" ToNextTime="6"
+                 GPS="39.773315114949696, 116.54020607471466" IsExchangeSta="NO" name="同济南路"/>
+        <station id="1706" PrivSta="1705" NextSta="1707" X="2619" Y="2595" ToPrivTime="6" ToNextTime="3"
+                 GPS="39.78288288543499, 116.52129650115967" IsExchangeSta="NO" name="荣昌东街"/>
+        <station id="1707" PrivSta="1706" NextSta="1708" X="2579" Y="2557" ToPrivTime="3" ToNextTime="5"
+                 GPS="39.793204649968224, 116.51322841644287" IsExchangeSta="NO" name="荣京东街"/>
+        <station id="1708" PrivSta="1707" NextSta="1709" X="2535" Y="2515" ToPrivTime="5" ToNextTime="2"
+                 GPS="39.80365674359022, 116.50516033172607" IsExchangeSta="NO" name="万源街"/>
+        <station id="1709" PrivSta="1708" NextSta="1710" X="2495" Y="2478" ToPrivTime="2" ToNextTime="2"
+                 GPS="39.80746460368237, 116.49170637130737" IsExchangeSta="NO" name="亦庄文化园"/>
+        <station id="1710" PrivSta="1709" NextSta="1711" X="2460" Y="2444" ToPrivTime="2" ToNextTime="1"
+                 GPS="39.802848988580244, 116.48026943206787" IsExchangeSta="NO" name="亦庄桥"/>
+        <station id="1711" PrivSta="1710" NextSta="1712" X="2418" Y="2404" ToPrivTime="1" ToNextTime="3"
+                 GPS="39.806706345328976, 116.46095752716064" IsExchangeSta="NO" name="旧宫"/>
+        <station id="1712" PrivSta="1711" NextSta="1713" X="2381" Y="2367" ToPrivTime="3" ToNextTime="7"
+                 GPS="39.82803689587217, 116.45985513925552" IsExchangeSta="NO" name="小红门"/>
+        <station id="1713" PrivSta="1712" NextSta="1714" X="2343" Y="2329" ToPrivTime="7" ToNextTime="3"
+                 GPS="39.83322393392368, 116.4481258392334" IsExchangeSta="NO" name="肖村"/>
+        <station id="1714" PrivSta="1713" NextSta="9999" X="2342" Y="2227" ToPrivTime="3" ToNextTime="2"
+                 GPS="39.84584204820541, 116.42835896462202" IsExchangeSta="YE" name="宋家庄">
+            <ExStation TOPath="05,0523" NeedTime="3"></ExStation>
+            <ExStation TOPath="10,1027" NeedTime="3"></ExStation>
+        </station>
 
-  </path>
+    </path>
 
-  <path name="房山线" id="18">
-    <station id="1801" IsExchangeSta="NO" PrivSta="0000" NextSta="1802" X="466" Y="2712" ToPrivTime="3" ToNextTime="3" GPS="39.72328710886109, 116.12528711557388" name="苏庄"/>
-    <station id="1802" IsExchangeSta="NO" PrivSta="1801" NextSta="1803" X="615" Y="2712" ToPrivTime="3" ToNextTime="3" GPS="39.7232468804683, 116.14074468612671" name="良乡南关"/>
-    <station id="1803" IsExchangeSta="NO" PrivSta="1802" NextSta="1804" X="734" Y="2712" ToPrivTime="3" ToNextTime="3" GPS="39.72319736856801, 116.15621566772461" name="良乡大学城西"/>
-    <station id="1804" IsExchangeSta="NO" PrivSta="1803" NextSta="1805" X="835" Y="2712" ToPrivTime="3" ToNextTime="3" GPS="39.72320407330659, 116.17648411542177" name="良乡大学城"/>
-    <station id="1805" IsExchangeSta="NO" PrivSta="1804" NextSta="1806" X="893" Y="2653" ToPrivTime="3" ToNextTime="3" GPS="39.730029674741864, 116.18350982666015" name="良乡大学城北"/>
-    <station id="1806" IsExchangeSta="NO" PrivSta="1805" NextSta="1807" X="940" Y="2606" ToPrivTime="3" ToNextTime="3" GPS="39.747931096582334, 116.1850430443883" name="广阳城"/>
-    <station id="1807" IsExchangeSta="NO" PrivSta="1806" NextSta="1808" X="982" Y="2564" ToPrivTime="3" ToNextTime="3" GPS="39.76064605392338, 116.18952702730894" name="篱笆房"/>
-    <station id="1808" IsExchangeSta="NO" PrivSta="1807" NextSta="1809" X="1034" Y="2511" ToPrivTime="3" ToNextTime="3" GPS="39.76383492870768, 116.2125501036644" name="长阳"/>
-    <station id="1809" IsExchangeSta="NO" PrivSta="1808" NextSta="1810" X="1082" Y="2463" ToPrivTime="3" ToNextTime="3" GPS="39.79479693486871, 116.21867191046476" name="稻田"/>
-    <station id="1810" IsExchangeSta="NO" PrivSta="1809" NextSta="1811" X="1133" Y="2412" ToPrivTime="3" ToNextTime="3" GPS="39.80762995646531, 116.29136312752962" name="大葆台"/>
-    <station id="1811" IsExchangeSta="YE" PrivSta="1810" NextSta="9999" X="1185" Y="2356" ToPrivTime="3" ToNextTime="3" GPS="39.81432151682169, 116.29699945449829" name="郭公庄">
-      <ExStation TOPath="09,0913" NeedTime="8"></ExStation>
-    </station>
-  </path>
+    <path name="房山线" id="18">
+        <station id="1801" IsExchangeSta="NO" PrivSta="0000" NextSta="1802" X="466" Y="2712" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.72328710886109, 116.12528711557388" name="苏庄"/>
+        <station id="1802" IsExchangeSta="NO" PrivSta="1801" NextSta="1803" X="615" Y="2712" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.7232468804683, 116.14074468612671" name="良乡南关"/>
+        <station id="1803" IsExchangeSta="NO" PrivSta="1802" NextSta="1804" X="734" Y="2712" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.72319736856801, 116.15621566772461" name="良乡大学城西"/>
+        <station id="1804" IsExchangeSta="NO" PrivSta="1803" NextSta="1805" X="835" Y="2712" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.72320407330659, 116.17648411542177" name="良乡大学城"/>
+        <station id="1805" IsExchangeSta="NO" PrivSta="1804" NextSta="1806" X="893" Y="2653" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.730029674741864, 116.18350982666015" name="良乡大学城北"/>
+        <station id="1806" IsExchangeSta="NO" PrivSta="1805" NextSta="1807" X="940" Y="2606" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.747931096582334, 116.1850430443883" name="广阳城"/>
+        <station id="1807" IsExchangeSta="NO" PrivSta="1806" NextSta="1808" X="982" Y="2564" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.76064605392338, 116.18952702730894" name="篱笆房"/>
+        <station id="1808" IsExchangeSta="NO" PrivSta="1807" NextSta="1809" X="1034" Y="2511" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.76383492870768, 116.2125501036644" name="长阳"/>
+        <station id="1809" IsExchangeSta="NO" PrivSta="1808" NextSta="1810" X="1082" Y="2463" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.79479693486871, 116.21867191046476" name="稻田"/>
+        <station id="1810" IsExchangeSta="NO" PrivSta="1809" NextSta="1811" X="1133" Y="2412" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.80762995646531, 116.29136312752962" name="大葆台"/>
+        <station id="1811" IsExchangeSta="YE" PrivSta="1810" NextSta="9999" X="1185" Y="2356" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.81432151682169, 116.29699945449829" name="郭公庄">
+            <ExStation TOPath="09,0913" NeedTime="8"></ExStation>
+        </station>
+    </path>
 
-  <path name="机场线" id="19">
-    <station id="1901" IsExchangeSta="YE" PrivSta="0000" NextSta="1902" X="2497" Y="1559" ToPrivTime="3" ToNextTime="3" GPS="39.94146229682228, 116.43349170684814" name="东直门" >
-      <ExStation TOPath="02,0214" NeedTime="8"></ExStation>
-      <ExStation TOPath="13,1316" NeedTime="2"></ExStation>
-    </station>
-    <station id="1902" IsExchangeSta="YE" PrivSta="1901" NextSta="1903" X="2720" Y="1409" ToPrivTime="3" ToNextTime="3" GPS="39.96104513961952, 116.45534634590149" name="三元桥">
-      <ExStation TOPath="10,1014" NeedTime="2"></ExStation>
-    </station>
-    <station id="1903" IsExchangeSta="NO" PrivSta="1902" NextSta="1904" X="3289" Y="995" ToPrivTime="3" ToNextTime="3" GPS="40.08030433692415, 116.58923149108887" name="2号航站楼"/>
-    <station id="1904" IsExchangeSta="NO" PrivSta="1903" NextSta="9999" X="3468" Y="995" ToPrivTime="3" ToNextTime="3" GPS="40.054555759781536, 116.63137435913086" name="3号航站楼"/>
-  </path>
+    <path name="机场线" id="19">
+        <station id="1901" IsExchangeSta="YE" PrivSta="0000" NextSta="1902" X="2497" Y="1559" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.94146229682228, 116.43349170684814" name="东直门">
+            <ExStation TOPath="02,0214" NeedTime="8"></ExStation>
+            <ExStation TOPath="13,1316" NeedTime="2"></ExStation>
+        </station>
+        <station id="1902" IsExchangeSta="YE" PrivSta="1901" NextSta="1903" X="2720" Y="1409" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.96104513961952, 116.45534634590149" name="三元桥">
+            <ExStation TOPath="10,1014" NeedTime="2"></ExStation>
+        </station>
+        <station id="1903" IsExchangeSta="NO" PrivSta="1902" NextSta="1904" X="3289" Y="995" ToPrivTime="3"
+                 ToNextTime="3" GPS="40.08030433692415, 116.58923149108887" name="2号航站楼"/>
+        <station id="1904" IsExchangeSta="NO" PrivSta="1903" NextSta="9999" X="3468" Y="995" ToPrivTime="3"
+                 ToNextTime="3" GPS="40.054555759781536, 116.63137435913086" name="3号航站楼"/>
+    </path>
 
-  <path name="八通线" id="30">
-    <station id="3001" IsExchangeSta="YE" PrivSta="0000" NextSta="3002" X="3027" Y="1870" ToPrivTime="3" ToNextTime="3" GPS="39.908485320941146, 116.51507377624512" name="四惠东">
-      <ExStation TOPath="01,0123" NeedTime="3"></ExStation>
-    </station>
-    <station id="3002" IsExchangeSta="NO" PrivSta="3001" NextSta="3003" X="3118" Y="1879" ToPrivTime="3" ToNextTime="3" GPS="39.909193077492176, 116.53181076049804" name="高碑店"/>
-    <station id="3003" IsExchangeSta="NO" PrivSta="3002" NextSta="3004" X="3205" Y="1880" ToPrivTime="3" ToNextTime="3" GPS="39.90915398647811, 116.55492201447487" name="传媒大学"/>
-    <station id="3004" IsExchangeSta="NO" PrivSta="3003" NextSta="3005" X="3304" Y="1880" ToPrivTime="3" ToNextTime="3" GPS="39.910328764583575, 116.57708644866943" name="双桥"/>
-    <station id="3005" IsExchangeSta="NO" PrivSta="3004" NextSta="3006" X="3398" Y="1879" ToPrivTime="3" ToNextTime="3" GPS="39.90917893271992, 116.59943595528602" name="管庄"/>
-    <station id="3006" IsExchangeSta="NO" PrivSta="3005" NextSta="3007" X="3508" Y="1879" ToPrivTime="3" ToNextTime="3" GPS="39.905901124468116, 116.61815643310547" name="八里桥"/>
-    <station id="3007" IsExchangeSta="NO" PrivSta="3006" NextSta="3008" X="3564" Y="1905" ToPrivTime="3" ToNextTime="3" GPS="39.903711888132776, 116.6372537612915" name="通州北苑"/>
-    <station id="3008" IsExchangeSta="NO" PrivSta="3007" NextSta="3009" X="3606" Y="1949" ToPrivTime="3" ToNextTime="3" GPS="39.89334087082563, 116.6464376449585" name="果园"/>
-    <station id="3009" IsExchangeSta="NO" PrivSta="3008" NextSta="3010" X="3643" Y="1988" ToPrivTime="3" ToNextTime="3" GPS="39.89017986778588, 116.65684461593628" name="九棵树"/>
-    <station id="3010" IsExchangeSta="NO" PrivSta="3009" NextSta="3011" X="3684" Y="2029" ToPrivTime="3" ToNextTime="3" GPS="39.88377509707073, 116.66845321655273" name="梨园"/>
-    <station id="3011" IsExchangeSta="NO" PrivSta="3010" NextSta="3012" X="3729" Y="2074" ToPrivTime="3" ToNextTime="3" GPS="39.875261917906506, 116.67832374572754" name="临河里"/>
-    <station id="3012" IsExchangeSta="NO" PrivSta="3011" NextSta="9999" X="3776" Y="2120" ToPrivTime="3" ToNextTime="3" GPS="39.87198480323338, 116.68643474578857" name="土桥"/>
-  </path>
+    <path name="八通线" id="30">
+        <station id="3001" IsExchangeSta="YE" PrivSta="0000" NextSta="3002" X="3027" Y="1870" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.908485320941146, 116.51507377624512" name="四惠东">
+            <ExStation TOPath="01,0123" NeedTime="3"></ExStation>
+        </station>
+        <station id="3002" IsExchangeSta="NO" PrivSta="3001" NextSta="3003" X="3118" Y="1879" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.909193077492176, 116.53181076049804" name="高碑店"/>
+        <station id="3003" IsExchangeSta="NO" PrivSta="3002" NextSta="3004" X="3205" Y="1880" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.90915398647811, 116.55492201447487" name="传媒大学"/>
+        <station id="3004" IsExchangeSta="NO" PrivSta="3003" NextSta="3005" X="3304" Y="1880" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.910328764583575, 116.57708644866943" name="双桥"/>
+        <station id="3005" IsExchangeSta="NO" PrivSta="3004" NextSta="3006" X="3398" Y="1879" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.90917893271992, 116.59943595528602" name="管庄"/>
+        <station id="3006" IsExchangeSta="NO" PrivSta="3005" NextSta="3007" X="3508" Y="1879" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.905901124468116, 116.61815643310547" name="八里桥"/>
+        <station id="3007" IsExchangeSta="NO" PrivSta="3006" NextSta="3008" X="3564" Y="1905" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.903711888132776, 116.6372537612915" name="通州北苑"/>
+        <station id="3008" IsExchangeSta="NO" PrivSta="3007" NextSta="3009" X="3606" Y="1949" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.89334087082563, 116.6464376449585" name="果园"/>
+        <station id="3009" IsExchangeSta="NO" PrivSta="3008" NextSta="3010" X="3643" Y="1988" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.89017986778588, 116.65684461593628" name="九棵树"/>
+        <station id="3010" IsExchangeSta="NO" PrivSta="3009" NextSta="3011" X="3684" Y="2029" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.88377509707073, 116.66845321655273" name="梨园"/>
+        <station id="3011" IsExchangeSta="NO" PrivSta="3010" NextSta="3012" X="3729" Y="2074" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.875261917906506, 116.67832374572754" name="临河里"/>
+        <station id="3012" IsExchangeSta="NO" PrivSta="3011" NextSta="9999" X="3776" Y="2120" ToPrivTime="3"
+                 ToNextTime="3" GPS="39.87198480323338, 116.68643474578857" name="土桥"/>
+    </path>
 
 </subway>

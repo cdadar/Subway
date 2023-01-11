@@ -1,103 +1,77 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Collections;
+﻿using System.Collections;
 
 namespace SubwayQuery.DataModel
 {
     public class Node
     {
-        public string Id;         //车站ID
-        public string StaName = "";//车站名称
-        public string PathName = "";//线路名称
-        public string PathId = "";  //线路ID
-        public string GPS = "";    //卫星定位
-        public string IsExchangeSta = "NO";//是否换乘
-
         /// <summary>
-        /// /茶盏坐标
+        ///     /茶盏坐标
         /// </summary>
-        public double dMapX = 0.0;
-        public double dMapY = 0.0;
+        public double dMapX;
+
+        public double dMapY;
+
         //Edge集合
         public ArrayList EdgeList;
-
-
-        #region  构造函数
-        public Node(string id, string staName, string pathName, string pathId, string gps, string isExchangeSta, double X, double Y)
-        {
-            this.Id = id;
-            this.StaName = staName;
-            this.PathId = pathId;
-            this.PathName = pathName;
-            this.IsExchangeSta = isExchangeSta;
-            this.dMapX = X;
-            this.dMapY = Y;
-            this.GPS = gps;
-
-            this.EdgeList = new ArrayList();
-        }
-        public Node()
-        { }
-
-        public Node(string id)
-        {
-            this.Id = id;
-        }
-
-        #endregion
+        public string GPS = ""; //卫星定位
+        public string Id; //车站ID
+        public string IsExchangeSta = "NO"; //是否换乘
+        public string PathId = ""; //线路ID
+        public string PathName = ""; //线路名称
+        public string StaName = ""; //车站名称
 
         /// <summary>
-        /// 获取NextSta指向的边
+        ///     获取NextSta指向的边
         /// </summary>
         /// <returns></returns>
         public Edge GetNetEdge()
         {
-            for (int i = 0; i < EdgeList.Count; i++)
+            for (var i = 0; i < EdgeList.Count; i++)
             {
-                Edge e = EdgeList[i] as Edge;
+                var e = EdgeList[i] as Edge;
 
                 if (e.EdgeDirection == DataDirection.next)
                     return e;
             }
+
             return null;
         }
 
         /// <summary>
-        /// 获取PrivSta指向的边
+        ///     获取PrivSta指向的边
         /// </summary>
         /// <returns></returns>
         public Edge GetPrivEdge()
         {
-            for (int i = 0; i < EdgeList.Count; i++)
+            for (var i = 0; i < EdgeList.Count; i++)
             {
-                Edge e=EdgeList[i] as Edge;
+                var e = EdgeList[i] as Edge;
                 if (e.EdgeDirection == DataDirection.priv)
                     return e;
             }
+
             return null;
         }
 
 
         public Node Clone()
         {
-            Node cloneNode = new Node();
-            cloneNode.Id = this.Id;
-            cloneNode.PathName = this.PathName;
-            cloneNode.PathId = this.PathId;
-            cloneNode.IsExchangeSta = this.IsExchangeSta;
-            cloneNode.dMapX = this.dMapX;
-            cloneNode.dMapY = this.dMapY;
-            cloneNode.StaName = this.StaName;
-            cloneNode.GPS = this.GPS;
+            var cloneNode = new Node();
+            cloneNode.Id = Id;
+            cloneNode.PathName = PathName;
+            cloneNode.PathId = PathId;
+            cloneNode.IsExchangeSta = IsExchangeSta;
+            cloneNode.dMapX = dMapX;
+            cloneNode.dMapY = dMapY;
+            cloneNode.StaName = StaName;
+            cloneNode.GPS = GPS;
 
-            ArrayList edges = new ArrayList();
+            var edges = new ArrayList();
 
-            for (int i = 0; i < this.EdgeList.Count; i++)
+            for (var i = 0; i < EdgeList.Count; i++)
             {
-                Edge curE = this.EdgeList[i] as Edge;
-                Edge e = new Edge();
+                var curE = EdgeList[i] as Edge;
+                var e = new Edge();
 
                 e.EdgeDirection = curE.EdgeDirection;
                 e.EndNodeId = curE.EndNodeId;
@@ -107,9 +81,39 @@ namespace SubwayQuery.DataModel
 
                 edges.Add(e);
             }
+
             cloneNode.EdgeList = edges;
 
             return cloneNode;
         }
+
+
+        #region 构造函数
+
+        public Node(string id, string staName, string pathName, string pathId, string gps, string isExchangeSta,
+            double X, double Y)
+        {
+            Id = id;
+            StaName = staName;
+            PathId = pathId;
+            PathName = pathName;
+            IsExchangeSta = isExchangeSta;
+            dMapX = X;
+            dMapY = Y;
+            GPS = gps;
+
+            EdgeList = new ArrayList();
+        }
+
+        public Node()
+        {
+        }
+
+        public Node(string id)
+        {
+            Id = id;
+        }
+
+        #endregion
     }
 }

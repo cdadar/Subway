@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Collections;
-
 using SubwayQuery.DataModel;
 
 namespace BusinessObject
@@ -11,47 +7,43 @@ namespace BusinessObject
     //PlanCourse缓存从源节点到其他任意节点的最小权值路径  路径表
     public class PlanCourse
     {
-        private Hashtable htPassedPath;
+        private readonly Hashtable htPassedPath;
 
-        public PlanCourse(ArrayList nodeList,string originId)
+        public PlanCourse(ArrayList nodeList, string originId)
         {
-            this.htPassedPath = new Hashtable();
+            htPassedPath = new Hashtable();
 
             Node originNode = null;
             foreach (Node node in nodeList)
-            {
                 if (node.Id == originId)
+                {
                     originNode = node;
+                }
                 else
                 {
-                    PassedPath pPath = new PassedPath(node.Id);
-                    this.htPassedPath.Add(node.Id, pPath);
+                    var pPath = new PassedPath(node.Id);
+                    htPassedPath.Add(node.Id, pPath);
                 }
-            }
 
             if (originNode == null)
                 throw new Exception("起始点不存在");
-            this.InitializeWeight(originNode);
+            InitializeWeight(originNode);
         }
+
+        public PassedPath this[string nodeId] => (PassedPath)htPassedPath[nodeId];
 
         private void InitializeWeight(Node originNode)
         {
-            if ((originNode.EdgeList == null) || (originNode.EdgeList.Count == 0))
+            if (originNode.EdgeList == null || originNode.EdgeList.Count == 0)
                 return;
             foreach (Edge edge in originNode.EdgeList)
             {
-                PassedPath pPath=this[edge.EndNodeId];
+                var pPath = this[edge.EndNodeId];
                 if (pPath == null)
                     continue;
                 pPath.PassedIdList.Add(originNode.Id);
                 pPath.Weight = edge.Weight;
             }
         }
-
-        public PassedPath this[string nodeId]
-        {
-            get { return (PassedPath)this.htPassedPath[nodeId]; }
-        }
-        
     }
 }

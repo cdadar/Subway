@@ -1,14 +1,12 @@
 ﻿function evtMenu1() {
     HideMenu();
-    window.location.href = "GoogleMap.aspx?data=" + document.all("HdMapData").value ;
+    window.location.href = "GoogleMap.aspx?data=" + document.all("HdMapData").value;
 }
 
 function evtMenu3() {
     HideMenu();
     document.all("hdInvokeServer").click();
 }
-
-
 
 
 function evtMenuOnmouseMove() {
@@ -38,7 +36,7 @@ function CreateMenu() {
     div_Menu3.onclick = evtMenu3;
     div_Menu3.onmousemove = evtMenuOnmouseMove;
     div_Menu3.onmouseout = evtOnMouseOut;
-    div_Menu3.innerHTML = "预计到达时间：" + document.all("hdUseTime").value + "分"; 
+    div_Menu3.innerHTML = "预计到达时间：" + document.all("hdUseTime").value + "分";
 
     //var Hr1 = document.createElement("Hr");
 
@@ -52,16 +50,13 @@ function CreateMenu() {
 }
 
 
-
-
 function ShowRightMenu() {
     if (document.all("myMap") != null) {//只有在显示路径图的时候，才显示此内容菜单
         if ($("div_RightMenu") == null) {
             CreateMenu();
             document.oncontextmenu = ShowMenu
             document.body.onclick = HideMenu
-        }
-        else {
+        } else {
             document.oncontextmenu = ShowMenu
             document.body.onclick = HideMenu
         }
@@ -72,14 +67,15 @@ function ShowRightMenu() {
 function IsIE() {
     if (navigator.appName == "Microsoft Internet Explorer") {
         return true;
-    }
-    else {
+    } else {
         return false;
     }
 }
 
 function ShowMenu() {
-    if (event.srcElement.id != "myMap") { return; } //要求必须是在地铁路线图上点击右键才会出现此菜单；
+    if (event.srcElement.id != "myMap") {
+        return;
+    } //要求必须是在地铁路线图上点击右键才会出现此菜单；
 //    document.body.onclick = HideMenu;
     var menu = $("div_RightMenu");
     menu.style.left = event.clientX + "px";

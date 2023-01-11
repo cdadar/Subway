@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace BusinessObject
+﻿namespace BusinessObject
 {
     public class RoutePlanResult
     {
@@ -13,26 +8,28 @@ namespace BusinessObject
 
         public RoutePlanResult(string[] strings, double d)
         {
-            this.passedNodeIds = strings;
-            this.weight = d;
+            passedNodeIds = strings;
+            weight = d;
         }
+
         public RoutePlanResult()
-        { }
+        {
+        }
 
         public void AddPassedNodes(string[] strings, double d)
         {
             if (passedNodeIds != null)
             {
-                string[] ss = new string[passedNodeIds.Length + strings.Length];
-                this.weight += d;
+                var ss = new string[passedNodeIds.Length + strings.Length];
+                weight += d;
                 passedNodeIds.CopyTo(ss, 0);
                 strings.CopyTo(ss, passedNodeIds.Length);
                 passedNodeIds = ss;
             }
             else
             {
-                this.passedNodeIds = strings;
-                this.weight = d;
+                passedNodeIds = strings;
+                weight = d;
             }
         }
     }

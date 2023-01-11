@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <meta name ="viewport" content="initial-scale=16,user-scalable=yes" />
+    <meta name="viewport" content="initial-scale=16,user-scalable=yes"/>
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
     <script type="text/javascript">
         function initialize(gpsx, gpsy) {
@@ -16,24 +16,24 @@
     </script>
 </head>
 <body topmargin="0" leftmargin="0" runat="server" id="googleMap">
-    <form id="form1" runat="server">
+<form id="form1" runat="server">
     <div>
-    <table cellpadding="0" cellspacing="0" border="0" width="910px" style="border: 1px outset #C0C0C0">
+        <table cellpadding="0" cellspacing="0" border="0" width="910px" style="border: 1px outset #C0C0C0">
             <tr>
                 <td style="border: 1px outset #C0C0C0">
                     <div style="width: 160px; height: 450px; overflow: auto;">
-                        <asp:BulletedList ID="bltStations" runat="server" BulletStyle="Numbered" 
-                            DisplayMode="LinkButton" onclick="bltStations_Click">
-                            
+                        <asp:BulletedList ID="bltStations" runat="server" BulletStyle="Numbered"
+                                          DisplayMode="LinkButton" onclick="bltStations_Click">
+
                         </asp:BulletedList>
                     </div>
                 </td>
                 <td style="border: 1px outset #C0C0C0">
-                	<div id="map_canvas" style="width: 750px; height: 450px"></div>                
+                    <div id="map_canvas" style="width: 750px; height: 450px"></div>
                 </td>
             </tr>
         </table>
     </div>
-    </form>
+</form>
 </body>
 </html>

@@ -1,33 +1,30 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
-using System.IO;
-using System.Drawing;
-using SubwayQuery.DataModel;
 using BusinessObject;
 
 namespace SubwayASP
 {
-    public partial class GetMap : System.Web.UI.Page
+    public partial class GetMap : Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
         }
+
         /// <summary>
-        /// 将服务器ASPX页面的内容发送到客户端ＩＥ
+        ///     将服务器ASPX页面的内容发送到客户端ＩＥ
         /// </summary>
         /// <param name="writer">发送的内容对象</param>
         protected override void Render(HtmlTextWriter writer)
         {
             //将生成的图片发挥客户端
-            MemoryStream ms = new MemoryStream();
-            Bitmap theBitmap = CreateImage();
-            theBitmap.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
-            Response.ClearContent();//需要输出图像信息，要修改HTTP头
+            var ms = new MemoryStream();
+            var theBitmap = CreateImage();
+            theBitmap.Save(ms, ImageFormat.Jpeg);
+            Response.ClearContent(); //需要输出图像信息，要修改HTTP头
             Response.ContentType = "image/jpeg";
             Response.BinaryWrite(ms.ToArray());
             theBitmap.Dispose();
@@ -35,32 +32,35 @@ namespace SubwayASP
             ms.Dispose();
             Response.End();
         }
+
         private Bitmap CreateImage()
         {
-            string dataPath = System.Web.HttpContext.Current.Server.MapPath("App_Data/OK.png");
-            Bitmap bitmap = new Bitmap(dataPath);
+            var dataPath = HttpContext.Current.Server.MapPath("App_Data/OK.png");
+            var bitmap = new Bitmap(dataPath);
             if (Request.QueryString["curSessionId"] != null)
             {
-                BizPlanPath bizPlanPath = new BizPlanPath();
-                System.Drawing.Color color = System.Drawing.Color.Red;
-                string sid = Request.QueryString["curSessionId"].ToString();
-                RoutePlanResult ret = (RoutePlanResult)Session[sid];
+                var bizPlanPath = new BizPlanPath();
+                var color = Color.Red;
+                var sid = Request.QueryString["curSessionId"];
+                var ret = (RoutePlanResult)Session[sid];
                 if (ret != null && ret.passedNodeIds.Length > 0)
                 {
-                    Graphics g = Graphics.FromImage(bitmap);
-                    string[] path = ret.passedNodeIds;
-                    for (int i = 0; i < path.Length; i++)
+                    var g = Graphics.FromImage(bitmap);
+                    var path = ret.passedNodeIds;
+                    for (var i = 0; i < path.Length; i++)
                     {
-                        Node station = bizPlanPath.GetNode(path[i]);
-                        Int32 LeftUpCornerX = Convert.ToInt32(station.dMapX) - 10;
-                        Int32 LeftUpCornerY = Convert.ToInt32(station.dMapY) - 10;
-                        System.Drawing.Rectangle newRect = new Rectangle(LeftUpCornerX, LeftUpCornerY, 20, 20);
+                        var station = bizPlanPath.GetNode(path[i]);
+                        var LeftUpCornerX = Convert.ToInt32(station.dMapX) - 10;
+                        var LeftUpCornerY = Convert.ToInt32(station.dMapY) - 10;
+                        var newRect = new Rectangle(LeftUpCornerX, LeftUpCornerY, 20, 20);
                         //设置背景色
                         g.FillEllipse(new SolidBrush(color), newRect);
                     }
+
                     g.Dispose();
                 }
             }
+
             return bitmap;
         }
     }
